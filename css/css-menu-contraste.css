@@ -1,0 +1,60 @@
+
+body.contraste .menu-info a{background: #000 !important; color: #fff !important;}
+
+body.contraste #navigation .titulo {
+	color: #fff !important; 	
+	background: #000 url("/img/portlet-header-contraste.jpg") no-repeat 96% center !important;
+	border-top: 04px #fff solid !important;
+	margin-bottom:15px;
+}
+
+body.contraste ul.cd-accordion-menu {background: #000 !important;}
+body.contraste .cd-accordion-menu label, body.contraste .cd-accordion-menu a {
+  	background-color: #000 !important;
+  	color: #fff !important;
+  	border-top: 1px solid #fff;
+}
+
+body.contraste .cd-accordion-menu a:hover{color:#ff0 !important;}
+
+body.contraste .cd-accordion-menu ul input:checked ~ label{
+	background-image:url('/img/menu-ativo-contraste.png'); 
+}
+
+body.contraste .cd-accordion-menu ul ul label, body.contraste .cd-accordion-menu ul ul a {background-color: #000 !important;}
+body.contraste .cd-accordion-menu ul label:hover, body.contraste .cd-accordion-menu ul a:hover {background-color: #000 !important;}
+
+/* abre submenu */
+body.contraste .cd-accordion-menu input[type=checkbox]:checked + label {border-top:3px solid #ff0; background-color:#000;}
+/*body.contraste .cd-accordion-menu input[type=checkbox]:checked ~ label + ul li:last-child a{border-bottom:3px solid #ff0;}
+body.contraste .cd-accordion-menu input[type=checkbox]:checked ~ label + ul li:last-child label{border-bottom:3px solid #ff0;}*/
+
+
+/*body.contraste .cd-accordion-menu input[type=checkbox]:checked ~ label + ul li ul li:last-child a{border-bottom:3px solid #ff0 !important;}
+body.contraste .cd-accordion-menu input[type=checkbox]:checked ~ label + ul li ul li a{border-bottom:none !important;}
+body.contraste .cd-accordion-menu input[type=checkbox]:checked ~ label + ul li:last-child input[type=checkbox]:checked ~ label{border-bottom:none !important;}*/
+
+
+body.contraste .cd-accordion-menu input[type=checkbox] + label + ul ul{
+	border-bottom:3px solid #ff0;
+}
+
+
+
+@media only screen and (max-width: 768px){	
+	body.contraste #navigation .titulo{		
+	    background: #000 url("/img/portlet-header-contraste.jpg") no-repeat 96% center;
+	    border-top: 4px solid #fff;
+		margin-bottom:0px;
+	}	
+	body.contraste .trigger + label img{filter: grayscale(100%);}
+	body.contraste .trigger + label{background-color:#000 !important; color:#000 !important;}
+
+	body.contraste #navigation input.trigger {display:none;}
+	/*#navigation input.trigger:checked +label{border-bottom:3px solid red;}*/
+	body.contraste #navigation input.trigger:checked ~ ul.cd-accordion-menu li .titulo{display: block !important;}
+	
+	body.contraste #navigation ul.cd-accordion-menu ul ul ul li a{border-bottom:none !important;}
+	body.contraste #navigation ul.cd-accordion-menu ul ul ul li:last-child a{border-bottom:3px solid #ff0 !important;}
+}
+

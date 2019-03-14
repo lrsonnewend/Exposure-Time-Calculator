@@ -1,0 +1,108 @@
+{
+  "QuantumEfficiency": {
+    "U": 0.26,
+    "B": 0.42,
+    "V": 0.66,
+    "R": 0.84,
+    "I": 0.92
+  },
+  "PixelSize": 0.0135,
+  "Modes": {
+   "1":{
+    "readoutNoise": 39.0,
+    "gain":5.4
+    },
+   "2":{
+      "readoutNoise": 111.4,
+      "gain":17.4
+    },
+   "3":{
+      "readoutNoise": 30.8,
+      "gain":2.8
+    },
+   "4":{
+        "readoutNoise": 78.5,
+      "gain":9.1
+    },
+   "5":{
+      "readoutNoise": 24.2,
+      "gain":1.5
+    },
+   "6":{
+      "readoutNoise": 59.7,
+      "gain":5.0
+    },
+   "7":{
+      "readoutNoise": 17.3,
+      "gain":3.3
+    },
+   "8":{
+      "readoutNoise": 66.1,
+      "gain":13.0
+    },
+   "9":{
+      "readoutNoise": 11.0,
+      "gain":1.6
+    },
+   "10":{
+      "readoutNoise": 41.4,
+      "gain":7.1
+    },
+   "11":{
+      "readoutNoise": 11.1,
+      "gain":0.9
+    },
+   "12":{
+      "readoutNoise": 31.7,
+      "gain":3.4
+    },
+   "13":{
+      "readoutNoise": 9.0,
+      "gain":3.2
+    },
+   "14":{
+      "readoutNoise": 30.5,
+      "gain":12.7
+    },
+   "15":{
+      "readoutNoise": 6.9,
+      "gain":1.7
+    },
+   "16":{
+      "readoutNoise": 25.6,
+      "gain":6.7
+    },
+   "17":{
+      "readoutNoise": 6.9,
+      "gain": 1.7
+    },
+   "18":{
+      "readoutNoise": 24.6,
+      "gain":3.4
+    },
+   "19":{
+      "readoutNoise": 4.4,
+      "gain": 3.3
+    },
+   "20":{
+      "readoutNoise": 13.4,
+      "gain":13.0
+    },
+   "21":{
+      "readoutNoise": 3.8,
+      "gain":1.7
+    },
+   "22":{
+      "readoutNoise": 10.5,
+      "gain":6.9
+    },
+   "23":{
+      "readoutNoise": 3.4,
+      "gain":0.9
+    },
+   "24":{
+      "readoutNoise": 9.2,
+      "gain":3.6
+    }
+  }
+}

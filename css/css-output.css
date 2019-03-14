@@ -1,0 +1,16 @@
+.output{
+		background-color: #dddddd;
+	}
+section.values{
+	border-top: 1px solid #606060;
+	border-bottom: 1px solid #606060;
+}
+footer{
+	border-top: 1px solid #606060;
+}
+span{
+	 font-weight: bold;
+}
+img{
+	 margin-left: 20px;
+}

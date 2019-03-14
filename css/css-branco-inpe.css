@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Topo */
+.fundo-topo {
+    background: #f2f2f2;
+    background: -webkit-linear-gradient(#f2f2f2, #d9d9d9);
+    background: -o-linear-gradient(#f2f2f2, #d9d9d9);
+    background: -moz-linear-gradient(#f2f2f2, #d9d9d9);
+    background: linear-gradient(#f2f2f2, #d9d9d9);
+}
+
+.fundo-topo a:visited, .fundo-topo a:active{color: #0f4098  !important;}
+.fundo-topo a{color: #0f4098  !important;}
+.fundo-topo a:hover{color: #00a8ff !important;}
+
+#topo .acessibilidade{border-bottom: dotted 01px #0f4098 ;}
+#topo .topo-logotipo{color: #0f4098 ;}
+#topo .portal-title{color: #0f4098 ;}
+#topo .ir-para span{color: #fff; background-color:#0f4098 ;}
+
+.faixa-topo ul li {border-right: 1px solid #98999b;}
+
+#google_translate_element div.goog-te-gadget-simple{background-color: #efefef; border-bottom: 1px dotted #0f4098 ;}
+#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{color: #0f4098 ;}
+#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover{color: #00a8ff !important;}
+
+

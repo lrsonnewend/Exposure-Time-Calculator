@@ -1,0 +1,181 @@
+#navigation a.on{color:#fff; background-color:#0075b8;}
+#navigation a.on:hover{color:#fff !important;}
+
+.menu-info a{
+    position: relative;
+    display: block;
+    background: #fff;
+    font-weight: 100;	
+	color: #2c67cd !important; 
+	padding:5px 0; 
+	font-size:14px; 
+	border-top:1px solid #dfdfdf;
+}
+.menu-info a:hover{text-decoration:underline;}
+.menu-info li:last-child a{border-bottom:1px solid #dfdfdf; margin-bottom:10px;}
+
+#menu-mobile, #menu-mobile + label{display:none;}
+
+#navigation .titulo {
+	font-family:"open_sansbold", Arial, Helvetica, sans-serif;
+	font-size:13px;
+	text-transform:uppercase;
+	color: #0f4098;
+	background: #f1f1f1;
+	padding:10px;
+	border-top: 04px #0f4098 solid;
+	margin-top:50px;
+}
+
+ul.cd-accordion-menu {
+  width: 100%;
+  background: #fff;
+}
+
+/* by default hide all sub menus */
+.cd-accordion-menu ul ul {display: none;}
+.cd-accordion-menu li {
+	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+}
+
+/* hide native checkbox */
+.cd-accordion-menu input[type=checkbox]  {position: absolute; opacity: 0;}
+
+.cd-accordion-menu label, .cd-accordion-menu a {
+	position: relative;
+  	display: block;
+  	padding: 10px 10px 10px 15px;
+  	background: #fff;
+  	color: #000;
+  	border-top: 1px solid #ccc;
+  	font-size: 14px;
+  	font-weight: 100; 
+}
+
+.cd-accordion-menu a:hover{color:#000 !important;}
+
+.cd-accordion-menu label {cursor: pointer; background-image: none;}
+
+.cd-accordion-menu ul input:checked ~ label{
+	background-image:url('/img/menu-ativo.gif'); 
+	background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 5px;
+}
+.cd-accordion-menu ul ul label, .cd-accordion-menu ul ul a {background: #eee;}
+.cd-accordion-menu ul ul ul label, .cd-accordion-menu ul ul ul a {background: #dfe1e3;}
+.cd-accordion-menu ul label:hover, .cd-accordion-menu ul a:hover {background: #f8f8f8;}
+
+.cd-accordion-menu label::before, .cd-accordion-menu label::after, .cd-accordion-menu a::after {
+	/* icons */
+	content: '';
+	//display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 50%;	
+}
+
+
+
+/* abre submenu */
+.cd-accordion-menu input[type=checkbox]:checked + label::after {background-position: -32px 0;}
+.cd-accordion-menu input[type=checkbox]:checked + label {border-top:3px solid #3a72bc; background-color:#f8f8f8; font-weight:bold;}
+/*.cd-accordion-menu input[type=checkbox]:checked ~ label + ul li:last-child a{border-bottom:3px solid #3a72bc;}
+.cd-accordion-menu input[type=checkbox]:checked ~ label + ul li:last-child label{border-bottom:3px solid #3a72bc;}*/
+
+
+.cd-accordion-menu input[type=checkbox]:checked ~ label + ul li ul li:last-child a{border-bottom:3px solid #3a72bc;}
+.cd-accordion-menu input[type=checkbox]:checked ~ label + ul li ul li a{border-bottom:none !important;}
+.cd-accordion-menu input[type=checkbox]:checked ~ label + ul li:last-child input[type=checkbox]:checked ~ label{border-bottom:none !important;}
+
+
+
+.cd-accordion-menu label::after {left: 15px; background-position: -16px 0;}
+.cd-accordion-menu a::after {left: 10px;}
+
+.cd-accordion-menu ul label::before {left: 10px;}
+.cd-accordion-menu ul label::after, .cd-accordion-menu ul a::after {left: 15px;}
+
+.cd-accordion-menu ul ul label, .cd-accordion-menu ul ul a {padding-left: 30px; font-size:13px;}
+.cd-accordion-menu ul ul label::before {left: 20px;}
+.cd-accordion-menu ul ul label::after, .cd-accordion-menu ul ul a::after {left: 25px;}
+
+.cd-accordion-menu ul ul ul label, .cd-accordion-menu ul ul ul a {padding-left: 30px;  font-size:12px;}
+.cd-accordion-menu ul ul ul label::before {left: 20px;}
+.cd-accordion-menu ul ul ul label::after, .cd-accordion-menu ul ul ul a::after {left: 25px;}
+
+
+.cd-accordion-menu input[type=checkbox]:checked + label + ul,
+.cd-accordion-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+  /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
+  /* show children when item is checked */
+	display: block;
+}
+
+.cd-accordion-menu input[type=checkbox] + label + ul ul{
+	border-bottom:3px solid #3a72bc;
+}
+
+@media only screen and (max-width: 768px){	
+	.menu-info{display:none;}
+	#menu-mobile, #menu-mobile + label{
+		display:block;
+		height: 40px;		
+	}
+
+	#navigation #portal-column-one{display: block;}
+	#navigation .titulo{		
+	    background: #edeff1 url("/img/portlet-header.gif") no-repeat 96% center;
+		font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+		font-size:22px;
+		font-weight:bold !important;
+	    border-top: 4px solid #0E4097;
+	    text-transform: uppercase;
+		padding:25px 55px 25px 25px;
+		margin-top:0px;
+	}
+	ul.cd-accordion-menu li:last-child .titulo{
+		-webkit-box-shadow: 0 4px 10px -6px #000;
+		-moz-box-shadow: 0 4px 10px -6px #000;
+		box-shadow: 0 4px 10px -6px #000;
+	}
+	
+	.trigger + label{
+		/*display:block;*/
+		padding:10px;
+		background-color:#0E4097;
+		color: #0E4097;
+		/*width:100%;
+		margin-left:-10px;*/
+	}	
+	.trigger + label img{float:right;}
+	
+	ul.cd-accordion-menu{
+		position: relative; 
+	    margin-bottom: 10px;
+	}
+	ul.cd-accordion-menu li .titulo{
+		display: none;
+	  	list-style: none;
+	  	margin: 0px;
+	  	padding: 0px;
+	}
+	ul.cd-accordion-menu li ul{display:none;}
+
+	#navigation input.trigger {display:none;}
+	/*#navigation input.trigger:checked +label{border-bottom:3px solid red;}*/
+	#navigation input.trigger:checked ~ ul.cd-accordion-menu li .titulo{display: block !important;}
+	
+	#navigation ul.cd-accordion-menu ul ul ul li a{border-bottom:none !important;}
+	#navigation ul.cd-accordion-menu ul ul ul li:last-child a{border-bottom:3px solid #3a72bc !important;}
+}
+
+@media only screen and (max-width: 290px){	
+	#searchGadget, .LSBox input.searchButton{width: 22px;}
+	#navigation .titulo{font-size:18px; padding: 20px 50px 20px 20px;}
+}
+

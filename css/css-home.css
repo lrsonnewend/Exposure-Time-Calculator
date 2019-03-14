@@ -1,0 +1,28 @@
+.box{
+	 width: 100%;
+}
+
+.card{
+	/*Reponsável pelo card e suas características*/
+	box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+	margin:16px;
+	height: 100%;
+	width: 28%;
+
+	/*Responsável por deixá-lo em linha*/
+	display: inline-block;
+	/*Responsável pela transição de saída da imagem*/
+	transition: 0.7s ease-out;
+}
+/*Responsável pela transição ao passar o mouse por cima*/
+.card:hover{
+	transition: 0.7s ease-in;
+	transform: scale(1.09);
+}
+.container{
+	margin-top:16px;
+	margin-bottom:16px;
+}
+.container h3{
+	text-align: center;
+}

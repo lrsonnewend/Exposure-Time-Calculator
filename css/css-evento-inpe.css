@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Topo */
+#topo .topo-logotipo{margin-top:32px; margin-bottom:25px; width: 100%;}
+
+/* Banner */
+.slider-holder {max-width: inherit;}
+/* Menu */
+.faixa-topo {padding:0px;}
+
+.faixa-topo ul.inpe li{border-right:1px solid #3a72bc !important; }
+
+.faixa-topo ul{float: left; width: auto;    padding: 8px 0px;}
+.faixa-top ul li{vertical-align: middle;}
+
+#navigation a.on{background-color:#0f4097; color:#7ed3ff !important;}
+#navigation .titulo.on{color:#7ed3ff !important;}
+
+#navigation .titulo {
+	font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #ffffff;
+    background: #0f4097;
+    padding: 0px;
+    border-right: none;
+	border-top:0px;
+    margin-top: 0px;	
+    margin-right: 15px;
+}
+
+#navigation .titulo:hover{color:#B9E7FF;}
+
+#navigation .titulo span{padding-right: 10px;}
+.cd-accordion-menu label::before, .cd-accordion-menu label::after, .cd-accordion-menu a::after{
+    content: '';
+    display: inherit;
+    width: 0px;
+    height: 0px;
+    position: inherit;
+    top: inherit;
+}
+#navigation .titulo:after, #navigation .titulo.on:after{
+	/*background: #0f4097 url(/img/seta_branca_down.png) no-repeat 80% center;
+	left: auto;    
+	top: -5px;	
+	width: 25px;
+    height: 25px;*/
+	
+	/*background: #0f4097 url(/img/seta_branca_down.png) no-repeat; left: auto;*/
+	content: '▼';
+    top: 0px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+	position: absolute;
+	left:auto;
+}
+
+.cd-accordion-menu a:hover{color:#B9E7FF !important;}
+.cd-accordion-menu li ul li:hover{background-color:#092963;}
+.cd-accordion-menu ul label:hover, .cd-accordion-menu ul a:hover{background-color:inherit;}
+
+ul.cd-accordion-menu{background-color:#0f4097;}
+
+.cd-accordion-menu label, .cd-accordion-menu a{
+	position: relative;
+    display: block;
+    padding: 0px;
+    background: #0f4097;
+    color: #000;
+    border-top:inherit;
+    font-size: 12px;
+    font-weight: normal;
+}
+ul.cd-accordion-menu ul{display:none;}
+.cd-accordion-menu input[type=checkbox]:checked + label::after {display:block; position:absolute;}
+.cd-accordion-menu input[type=checkbox]:checked + label + ul, .cd-accordion-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul{    
+	display: block;
+    position: absolute;   
+    max-width: 300px;
+	z-index:9999;
+}
+
+.cd-accordion-menu li ul li{
+	text-align:left;
+	display:block; 	
+    width: 100%;
+    padding: 0px 0px;	
+	background-color:#082f76; 
+	border-bottom:1px solid #3a72bc;
+	border-right:none;
+	min-width: 150px;
+}
+.cd-accordion-menu li ul li a{padding:8px 20px; background-color:#082f76;}
+.cd-accordion-menu input[type=checkbox]:checked + label{font-weight:normal; color:#3fbdff;}
+
+
+
+/* Conteudo */
+
+#content .localizacao iframe{
+	width: 100%;
+    margin-top: 10px;
+}
+#content .localizacao .right{width: 100%;}
+	
+#content h1.documentFirstHeading{color: #0074b8;}
+.slider-holder .slider-change{margin-top: 1.2%; padding-bottom: 5px;}
+div.documentByLine {
+    font-size: 12.5px;
+    display: block;    
+    margin-top: 30px;
+    margin-bottom: 10px;
+    float: left;	
+    line-height: 1.8em;
+}
+
+div.documentByLine.voltar {float:right !important;}
+
+div.documentByLine a, div.documentByLine a:visited, div.documentByLine a:active{color: #2c66ce;}
+div.documentByLine a:hover{color: #06F !important;}
+#voltar-topo{float:right; margin-top: 50px; margin-bottom: 10px;}
+
+
+/* Rodapé */
+.rodape-inpe{background: #f2f2f2;padding: 20px 0px 5px 0px;}
+.rodape-inpe .conteudo-rodape ul li span{color: #0f4098;}
+.rodape-inpe .conteudo-rodape span{
+	font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 10px;
+    display: block;
+    font-family: "open_sansbold", Arial, Helvetica, sans-serif;
+	color: #0f4098;
+}
+.rodape-inpe .conteudo-rodape ul li{border-left: 1px dotted #0f4098;}
+.rodape-inpe .conteudo-rodape a:visited, .rodape-inpe .conteudo-rodape a:active{color: #0f4098 !important;}
+.rodape-inpe .conteudo-rodape a{color: #0f4098 !important;}
+.rodape-inpe .conteudo-rodape a img{outline: none !important;}
+/*.rodape-inpe .conteudo-rodape > .left{margin:20px 20px 20px 0;}*/
+
+@media only screen and (max-width: 990px){
+	div.documentByLine{margin-left:5px; margin-top: 36px;}
+	.slider-holder img {max-width: 100%;}
+}
+
+@media only screen and (max-width: 850px){
+	.rodape-inpe{display:block; padding: 20px 10px 5px 10px;}
+}
+
+@media only screen and (max-width: 768px){
+	#navigation .titulo:after{top: 25px;}
+	#navigation .titulo {
+		font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+	    font-size: 22px;		
+	    text-transform: uppercase;
+	    font-weight: bold !important;
+		display:inline-block;
+		width:100%;
+	    padding: 25px 15px;
+		width:auto;	
+	    text-align: left;
+	}
+	
+	ul.inpe li a{padding: 8px 15px 8px 15px !important; display: block;} 	
+	.faixa-topo ul.inpe li{text-align:right; border-right: none !important;}
+	
+	#navigation input.trigger[type=checkbox]:checked + label + ul.cd-accordion-menu{display:block;}
+
+	ul.cd-accordion-menu a{	
+		font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+	    font-size: 22px;		
+	    text-transform: uppercase;
+	    font-weight: bold !important;
+	}
+	
+	ul.cd-accordion-menu li ul a{		
+	    font-size: 16px;		
+	    text-transform: inherit;
+	    font-weight: normal !important;
+	}
+	
+	ul.cd-accordion-menu{
+		display: none;
+		position:inherit;
+	    width: 100%;		
+	}
+	.faixa-topo ul{
+		float:none;
+		padding:0px;
+	}
+	.faixa-topo ul li{
+	    text-align: left;
+		border-right: none;	
+		border-bottom:3px solid #3a72bc;
+		display:block;
+		width:100%;
+		padding:0px;
+	}
+	.faixa-topo ul li a{		
+		position:inherit;
+		padding:25px 15px 25px 15px;
+		outline: none !important;
+	}
+	
+	.cd-accordion-menu li ul li{padding:0px;}
+	.cd-accordion-menu li ul li a{		
+		padding:15px 15px 15px 30px;
+	}
+	.cd-accordion-menu li ul li{text-align:left; width: 100%;}
+	.cd-accordion-menu input[type=checkbox]:checked + label + ul, .cd-accordion-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul{
+		display: block;
+    	position: inherit;
+		max-width:inherit;
+	}
+	
+}
+
+@media only screen and (max-width: 768px){
+	.faixa-topo ul li{margin: 0px;}
+}
+
+@media only screen and (max-width: 320px){	
+	#content{margin-top:15px;}
+	div.documentByLine{font-size:11px;}
+	
+	.menu li:hover ul{display: inline-block; position: inherit; top: 0;}
+	.faixa-topo ul li ul li{margin: 0px;}
+}
+

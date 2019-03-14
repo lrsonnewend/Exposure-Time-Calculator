@@ -1,0 +1,22 @@
+{
+	"QuantumEfficiency":
+  {
+    "U": 0.32,
+    "B": 0.55,
+    "V": 0.63,
+    "R": 0.78,
+    "I": 0.60 
+  },
+  "PixelSize": 0.024,
+  "Modes":
+  {
+    "1":{
+        "readoutNoise": 4.1,
+        "gain":5.0
+      },
+    "2":{
+        "readoutNoise": 9.5,
+        "gain":5.0
+      }	
+  }
+}

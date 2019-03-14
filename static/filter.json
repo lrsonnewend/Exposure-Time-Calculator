@@ -1,0 +1,87 @@
+{
+	"U":
+	{
+		"effectiveLenght":0.3663,
+		"filterWidth":0.65,
+		"fluxZero":4.26,
+		"photometric": 0.344,
+		"good":0.5135,
+		"regular":0.683,
+		"tTel": 0.85,
+		"tFilter": 0.65,
+		"sky":
+		{
+			"new": 20.2,
+			"quarter":18.1,
+			"full":15.2
+		}
+	},
+	"B":
+	{
+		"effectiveLenght":0.4361,
+		"filterWidth":0.089,
+		"fluxZero":4.26,
+		"photometric":0.195,
+		"good":0.277,
+		"regular":0.359,
+		"tTel": 0.85,
+		"tFilter": 0.50,
+		"sky":
+		{
+			"new": 20.9 ,
+			"quarter":19.8,
+			"full":17.7
+		}
+	},
+	"V":
+	{
+		"effectiveLenght":0.5448,
+		"filterWidth":0.084,
+		"fluxZero":3.64,
+		"photometric":0.113,
+		"good": 0.1655,
+		"regular":0.218,
+		"tTel": 0.85,
+		"tFilter": 0.75,
+		"sky":
+		{
+			"new": 20.5,
+			"quarter":20.1,
+			"full":18.7
+		}
+	},
+	"R":
+	{
+		"effectiveLenght":0.6407,
+		"filterWidth":0.158,
+		"fluxZero":3.08,
+		"photometric":0.03,
+		"good":0.0975,
+		"regular":0.165,
+		"tTel": 0.85,
+		"tFilter": 0.70,
+		"sky":
+		{
+			"new": 20.7,
+			"quarter":20.4,
+			"full":19.7
+		}
+	},
+	"I":
+	{
+		"effectiveLenght":0.7980,
+		"filterWidth":0.154,
+		"fluxZero":2.55,
+		"photometric": 0.01,
+		"good":0.0665,
+		"regular":0.123,
+		"tTel": 0.85,
+		"tFilter": 0.82,
+		"sky":
+		{
+			"new": 20.3,
+			"quarter":20.1,
+			"full":19.6
+		}
+	}
+}

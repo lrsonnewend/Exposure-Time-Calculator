@@ -1,0 +1,19 @@
+.city {display:none}
+table{
+	border: 1px solid #606060 ;
+	border-spacing: 0px;
+}
+table td{
+	border: 1px solid #606060 ;
+	margin: 2px;
+	padding: 5px;
+}
+label{
+	font-size: 15pt;
+}
+div#boxTime{
+	display: none;
+}
+div#boxSigma{
+	display: none;
+}

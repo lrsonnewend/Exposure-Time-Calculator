@@ -1,0 +1,352 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Desconhecido </title></head><body>
+<h1 id="documentation-of-etc">Documentation of ETC</h1>
+<h2 id="project-description">Project description</h2>
+<p>The Exposure Time Calculator (ETC) is a tool to calculate the integration time or some observational error of an observation. The ETC consists of three ETCs: 
+ * ETC - IAGPOL of the IAGPOL instrument. 
+ * ETC - SPARC4, the SPARC4 instrument. 
+ * ETC - Camara Direta of the Camara Direta instrument. </p>
+<p>The ETC was created in PHP 7.1 using the MVC architecture. In addition to these technologies, JSON, HTML5, CSS3 and JavaScript were used.</p>
+<p>This documentation is simple and objective to give an overview, so will not go into details of the operation of ETC. For further details refer to the ETC <a href="https://github.com/LASalvador/Exposure-Time-Calculator/tree/master/source">code</a>.</p>
+<h2 id="folder-structure">Folder structure</h2>
+<p>This topic is intended to describe folders in the project.
+Based on the project root folder, the description of each ETC project folder is described below.</p>
+<h3 id="css"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/tree/master/css">/css</a></h3>
+<p>It Contains all css files on the page. The files in this folder follow the following pattern:</p>
+<p><strong>css-{nomeDaPagina/Elemento}.css.</strong></p>
+<h3 id="fonts"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/tree/master/fonts">/fonts </a></h3>
+<p>It Contains all fonts used on pages.</p>
+<h3 id="img"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/tree/master/img">/img </a></h3>
+<p>It Contains all images used on pages.</p>
+<h3 id="include"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/tree/master/include">/include</a></h3>
+<p>It Contains a PHP file, called functions.php, responsible for loading the page trace.</p>
+<h3 id="js"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/tree/master/js">/js</a></h3>
+<p>It Contains all JavaScript files used on pages.</p>
+<h3 id="source"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/tree/master/source">/source </a></h3>
+<p>It contains all the codes responsible for the calculations that the ETC performs.</p>
+<h3 id="sourcecontroller"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Controller">/source/Controller </a>.)</h3>
+<p>It Contains the files responsible for managing user interactions having a method for each possible user action</p>
+<h3 id="sourcemodel"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model">/source/Model</a>.)</h3>
+<p>It Contains the files related to the models, that is, the classes responsible for generating the objects used in the project.</p>
+<h3 id="static"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/tree/master/static">/static</a></h3>
+<p>It contains all the static files of the application. Static files are files that are sent to the browser exactly as they are on the server's hard drive. Note that the <strong>.css</strong> and <strong>.js</strong> files are part of this type of files, however it was preferred to leave them external to this folder.</p>
+<h3 id="vendor"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/tree/master/vendor">/vendor </a></h3>
+<p>Folder created by the composer responsible for managing the autoloads and dependencies of files in the code.</p>
+<h3 id="view"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/tree/master/views">/view </a></h3>
+<p>Folder containing all pages of the site, that is, all the files with <strong>.html</strong> are responsible for generating the body of the page.</p>
+<h2 id="important-files">Important Files</h2>
+<p>This topic is intended to report the files essential to the operation of the project and in some of those files its methods will be detailed.</p>
+<h3 id="sourcerouterphp"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Router.php">/source/Router.php</a></h3>
+<p>This file is responsible for managing the existing routes in the site. In addition, it is also able to determine the HTTP request method</p>
+<h3 id="sourcemodelccdphp"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model/CCD.php">/source/Model/CCD.php</a></h3>
+<p>This class represents the <a href="https://en.wikipedia.org/wiki/Charge-coupled_device">CCD</a> used in the instrument. Below is a description of its methods and attributes for more details see the <a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model/CCD.php">class</a>.</p>
+<h4 id="attributes">Attributes</h4>
+<p><strong>Readout noise</strong> - It represents the readout noise to the CCD.</p>
+<p><strong>Gain</strong> - It represents the CCD's gain</p>
+<p><strong>Quantum Efficiency</strong> - It represents the CCD's quantum efficiency</p>
+<p><strong>CCD number</strong> - It is the serial number of the CCD.</p>
+<p><strong>Binning</strong>  - It represents the CCD's binning.</p>
+<p><strong>Pixel Size</strong> - It represents the pixel size in CCD. </p>
+<h4 id="methods">Methods</h4>
+<h5 id="construct">construct()</h5>
+<p>This method builds the object and sets all attributes.</p>
+<h5 id="setreadoutnoise">setReadoutNoise()</h5>
+<p>It Sets up Readout Noise </p>
+<h5 id="getreadoutnoise">getReadoutNoise()</h5>
+<p>It returns the Readout noise</p>
+<h5 id="setgain">setGain()</h5>
+<p>It sets up the Gain.</p>
+<h5 id="get-gain">get Gain()</h5>
+<p>It returns the Gain.</p>
+<h5 id="setquantumefficiency">setQuantumEfficiency()</h5>
+<p>It sets up the Quantum Efficiency.</p>
+<h5 id="getquantumefficiency">getQuantumEfficiency()</h5>
+<p>It returns the Quantum Efficiency. </p>
+<h5 id="setccdnumber">setCCDNumber()</h5>
+<p>It sets up the CCD number</p>
+<h5 id="getccdnumber">getCCDNumber()</h5>
+<p>It returns the CCD number</p>
+<h5 id="setbinning">setBinning()</h5>
+<p>It sets up the Binning</p>
+<h5 id="getbinning">getBinning()</h5>
+<p>It returns the Binning. </p>
+<h5 id="setpixelsize">setPixelSize()</h5>
+<p>It sets up the pixel size</p>
+<h5 id="getpixelsize">getPixelSize()</h5>
+<p>It returns the pixel size</p>
+<h3 id="sourcemodelfilterphp"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model/Filter.php">/source/Model/Filter.php</a></h3>
+<p>This class represents the Filter used during the Observation. Below is a description of its methods and attributes for more details see the <a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model/Filter.php">class</a>.</p>
+<h4 id="attributes_1">Attributes</h4>
+<p><strong>Filter width</strong> - It represents the Filter's width. </p>
+<p><strong>Effective length</strong> -It represents the Filter's effective wavelength.</p>
+<p><strong>Flux zero</strong> - It represents the flux of magnitude zero.</p>
+<h4 id="methods_1">Methods</h4>
+<h5 id="constructor">constructor()</h5>
+<p>It builds the object and defines all attributes. </p>
+<h5 id="setfilterwidth">setfilterWidth()</h5>
+<p>It sets up the filter width</p>
+<h5 id="getfilterwidth">getFilterWidth()</h5>
+<p>It returns the filter width</p>
+<h5 id="seteffectivelength">setEffectiveLength()</h5>
+<p>It sets up the Effective wavelength</p>
+<h5 id="geteffectivelength">getEffectiveLength()</h5>
+<p>It returns the Effective wavelength </p>
+<h5 id="setfluxzero">setFluxZero()</h5>
+<p>It sets up the Flux magnitude zero</p>
+<h5 id="getfluxzero">getFluxZero()</h5>
+<p>It returns the Flux magnitude zero.</p>
+<h3 id="sourcemodelgraphicsphp"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model/Graphics.php">/source/Model/Graphics.php</a></h3>
+<p>It Responsible for generating the data set for the chart. Below is a description of its methods and attributes for more details see the<a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model/Graphics.php">class</a>.</p>
+<h4 id="attributes_2">Attributes</h4>
+<p><strong>Observation</strong> - represents an Observation Object</p>
+<p><strong>Sky</strong> - represents a Sky Object</p>
+<p><strong>Instrument</strong> - represents an Instrument Object</p>
+<h4 id="methods_2">Methods</h4>
+<h5 id="setobservation">setObservation()</h5>
+<p>It sets up the Observation Object</p>
+<h5 id="getobservation">getObservation()</h5>
+<p>It returns the Observation Object</p>
+<h5 id="setsky">setSky()</h5>
+<p>It sets up the Sky Object</p>
+<h5 id="getsky">getSky()</h5>
+<p>It returns the Sky Object</p>
+<h5 id="setinstrument">setInstrument()</h5>
+<p>It sets up the Instrument Object</p>
+<h5 id="getinstrument">getInstrument()</h5>
+<p>It returns the Instrument Object</p>
+<h4 id="generatevalues">generateValues()</h4>
+<p>It generates a dataset to construct the graph.</p>
+<h3 id="sourcemodelinstrumentphp"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model/Instrument.php">/source/Model/Instrument.php</a></h3>
+<p>This class represents the instrument and its attributes. Below is a description of its methods and attributes for more details see the<a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model/Instrument.php">class</a>.</p>
+<h4 id="attributes_3">Attributes</h4>
+<p><strong>Number waveplates</strong> - It represents the number of waveplate positions.</p>
+<p><strong>Aperture</strong> - It represents Telescope's Diameter of aperture.</p>
+<p><strong>Focal reducer</strong> - It represents focal reducer. </p>
+<p><strong>Plate Scale</strong>  - It represents the plate scale of the instrument.</p>
+<p><strong>CCD</strong> - It represents the CCD.</p>
+<p><strong>Plate Scale Telescope</strong> - It represents the Instrument of telescope</p>
+<p><strong>fArea</strong> - It represents the fraction of the telescope area that effectively collects photons</p>
+<p><strong>tTel</strong> -  It represents the transmission of the telescope surface</p>
+<p><strong>tInstr</strong> - It represents the transmission in the instrument</p>
+<p><strong>tFilter</strong> - It represents the transmission of the filter</p>
+<h4 id="methods_3">Methods</h4>
+<h5 id="constructor_1">constructor()</h5>
+<p>It builds the object and sets up all attributes.</p>
+<h5 id="setnumberwaveplates">setNumberWavePlates()</h5>
+<p>It sets up the number of wave plates </p>
+<h5 id="getnumberwaveplates">getNumberWavePlates()</h5>
+<p>It returns the number of waveplates</p>
+<h5 id="setaperture">setAperture()</h5>
+<p>It sets up the Telescope Diameter</p>
+<h5 id="getaperture">getAperture()</h5>
+<p>It returns the Telescope Diameter</p>
+<h5 id="setfocalreducer">setFocalReducer()</h5>
+<p>It sets up the focal reducer</p>
+<h5 id="getfocalreducer">getFocalReducer()</h5>
+<p>It returns the Focal Reducer</p>
+<h5 id="setplatescale">setPlateScale()</h5>
+<p>It sets up Plate Scale</p>
+<h5 id="getplatescale">getPlateScale()</h5>
+<p>It returns  Plate Scale</p>
+<h5 id="setccd">setCCD()</h5>
+<p>It sets up CCD</p>
+<h5 id="getccd">getCCD()</h5>
+<p>It returns CCD</p>
+<h5 id="setplatescaletelescope">setPlateScaleTelescope ()</h5>
+<p>It Sets the Plate Scale Telescope</p>
+<h5 id="getplatescaletelescope">getPlateScaleTelescope ()</h5>
+<p>It Returns the Plata Scale Telescope </p>
+<h5 id="setfarea">setFArea()</h5>
+<p>It Sets the FArea</p>
+<h5 id="getfarea">getFArea()</h5>
+<p>It retuns the FArea</p>
+<h5 id="setttel">setTTel()</h5>
+<p>It Sets the tTel</p>
+<h5 id="getttel">getTTel()</h5>
+<p>It returns the tTel</p>
+<h5 id="settinstr">setTInstr()</h5>
+<p>It Sets the tInstr</p>
+<h5 id="gettinstr">getTInstr()</h5>
+<p>It returns the tInstr </p>
+<h5 id="settfilter">setTFilter()</h5>
+<p>It sets up the tFilter</p>
+<h5 id="gettfilter">getTFilter()</h5>
+<p>It returns the tFilter</p>
+<h3 id="sourcemodelobservationphp"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model/Observation.php">/source/Model/Observation.php</a></h3>
+<p>This class represents the Observation and its attributes. Below is a description of its methods and attributes for more details see the<a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model/Observation.php">class</a>.</p>
+<h4 id="attributes_4">Attributes</h4>
+<p><strong>SigmaP</strong> - Error of the linear polarization </p>
+<p><strong>SigmaV</strong> - error of the circular polarization </p>
+<p><strong>Number photons</strong> - the number of source photons.</p>
+<p><strong>Magnitude</strong> - the magnitude of the source
+<strong>Signal Noise Ratio</strong> - It represents the signal to noise ratio of the source. </p>
+<p><strong>Number pixels</strong> - It represents the number of source pixels. </p>
+<p><strong>Radius aperture</strong> - It represents the aperture radius to photometry </p>
+<p><strong>Time Exposure</strong> - Integration time to source </p>
+<p><strong>fCalib</strong> - It's a factor to correct the possible difference between this ETC results and the real measurements </p>
+<h4 id="methods_4">Methods</h4>
+<h5 id="constructor_2">constructor()</h5>
+<p>It builds the object and sets up the attributes: fcalib, Magnitude, Radius Aperture, number pixels, Number Photons.  </p>
+<h5 id="setsigmap">setSigmaP()</h5>
+<p>It sets up the sigmaP</p>
+<h5 id="getsigmap">getSigmaP()</h5>
+<p>It returns the sigmaP</p>
+<h5 id="setsigmav">setSigmaV()</h5>
+<p>It sets up the SigmaV</p>
+<h5 id="getsigmav">getSigmaV()</h5>
+<p>It returns the SigmaV</p>
+<h5 id="setnumberphotons">setNumberPhotons()</h5>
+<p>It sets up number Of source photons</p>
+<h5 id="getnumberphotons">getNumberPhotons()</h5>
+<p>It returns number of source photons</p>
+<h5 id="setmagnitude">setMagnitude()</h5>
+<p>It sets up the Magnitude</p>
+<h5 id="getmagnitude">getMagnitude()</h5>
+<p>It returns the magnitude </p>
+<h5 id="setsignalnoiseratio">setSignalNoiseRatio()</h5>
+<p>It sets up the Signal to noise ratio</p>
+<h5 id="getsignalnoiseratio">getSignalNoiseRatio()</h5>
+<p>It returns the Signal to noise ratio </p>
+<h5 id="setnumberpixels">setNumberpixels()</h5>
+<p>It sets up the number of pixels</p>
+<h5 id="getnumberpixels">getNumberpixels()</h5>
+<p>It returns the number of pixels</p>
+<h5 id="setradiusaperture">setRadiusAperture()</h5>
+<p>It sets up the aperture radius</p>
+<h5 id="getradiusaperture">getRadiusAperture()</h5>
+<p>It returns the aperture radius</p>
+<h5 id="settimeexposure">setTimeExposure()</h5>
+<p>It sets up the integration time</p>
+<h5 id="gettimeexposure">getTimeExposure()</h5>
+<p>It returns the integration time </p>
+<h5 id="setfcalib">setFcalib()</h5>
+<p>It sets up Fcalib</p>
+<h5 id="getfcalib">getFcalib()</h5>
+<p>It returns Fcalib</p>
+<h3 id="sourcemodelreaderjsonphp"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model/ReaderJSON.php">/source/Model/ReaderJSON.php</a></h3>
+<p>It���s responsible to read the <a href="https://www.json.org/">JSON</a> files.</p>
+<h4 id="methods_5">Methods</h4>
+<h5 id="readquantumefficiency">readQuantumEfficiency()</h5>
+<p>It reads the the quantum efficiency value.</p>
+<h5 id="readccdvalues">readCCDValues()</h5>
+<p>It reads the readout noise and gain of CCD.</p>
+<h5 id="readccdpixelsize">readCCDPixelSize()</h5>
+<p>It reads the CCD���s pixel size</p>
+<h5 id="readfilter">readFilter()</h5>
+<p>It reads the filter atrributes</p>
+<h5 id="readmsky">readMsky()</h5>
+<p>It reads the Magnitude of Sky</p>
+<h3 id="sourcemodelskyphp"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model/Sky.php">/source/Model/Sky.php</a></h3>
+<p>Represent the Atmospheric conditions at the time of observation.  Below is a description of its methods and attributes for more details see the<a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Model/Sky.php">class</a>.</p>
+<h4 id="attributes_5">Attributes</h4>
+<p><strong>NumberPhotons</strong> - It represents the number Photons of sky.</p>
+<p><strong>Transparency sky</strong> - It represents the transparency of the sky.</p>
+<p><strong>Magnitude sky</strong> - It represents the magnitude of the sky.</p>
+<p><strong>fCalib</strong> - It's a factor to correct the possible difference between this ETC results and the real measurements.</p>
+<h4 id="methods_6">Methods</h4>
+<h5 id="constructor_3">constructor()</h5>
+<p>It builds the object and set all the attributes</p>
+<h5 id="setnumberphotons_1">setNumberPhotons()</h5>
+<p>It sets up the number of photons of sky </p>
+<h5 id="getnumberphotons_1">getNumberPhotons()</h5>
+<p>It returns the number of photons. </p>
+<h5 id="settransparencysky">setTransparencySky()</h5>
+<p>It sets up the transparency of the sky. </p>
+<h5 id="gettransparencysky">getTransparencySky()</h5>
+<p>It returns the transparency of the sky. </p>
+<h5 id="setmagnitudesky">setMagnitudeSky()</h5>
+<p>It sets up the Magnitude of sky</p>
+<h5 id="getmagnitudesky">getMagnitudeSky()</h5>
+<p>It returns the Magnitude of Sky.</p>
+<h3 id="sourcecontrollercontrollerphp"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Controller/Controller.php">/source/Controller/Controller.php</a></h3>
+<p>Abstract class bringing essential methods to a controller. Among them we can mention: loading pages, capturing parameters sent by HTTP, redirecting pages and saving values in SESSION.</p>
+<h3 id="sourcecontrollerappcontrollerphp"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/source/Controller/APPController.php">source/Controller/APPController.php</a></h3>
+<p>Class responsible for controlling the application according to the user's request.</p>
+<h4 id="methods_7">Methods</h4>
+<h5 id="index">index()</h5>
+<p>It loads the homepage.</p>
+<h5 id="about">about()</h5>
+<p>It loads the about page.</p>
+<h5 id="loadform">loadForm()</h5>
+<p>It loads the ETC form in use.</p>
+<h5 id="loadoutput">loadOutput()</h5>
+<p>It loads the ETC output page in use.</p>
+<h5 id="loadinformation">loadInformation()</h5>
+<p>It loads the ETC information page in use.</p>
+<h5 id="submitformiagpol">submitFormIAGPOL()</h5>
+<p>It is responsible for generating the ETC-IAGPOL responses. </p>
+<h5 id="submitformcd">submitFormCD()</h5>
+<p>It is responsible for generating the ETC-CD responses. </p>
+<h5 id="submitformsparc4">submitFormSPARC4()</h5>
+<p>It is responsible for generating the ETC-SPARC4 responses. </p>
+<h3 id="viewaboutphp">/view/about.php</h3>
+<p>It's responsible for the screen with information on the development of ETC</p>
+<h3 id="viewbarra-governophp">/view/barra-governo.php</h3>
+<p>It's responsible for the government bar at the top of the page.</p>
+<h3 id="viewformcdphp">/view/formCD.php</h3>
+<p>ETC - Camara Direta page</p>
+<h3 id="viewformiagpolphp">/view/formIAGPOL.php</h3>
+<p>ETC - IAGPOL page</p>
+<h3 id="viewformsparc4php">/view/formSPARC4.php</h3>
+<p>ETC - SPARC4 page</p>
+<h3 id="viewhomephp">/view/home.php</h3>
+<p>The site's HomePage</p>
+<h3 id="viewinformationcdphp">/view/informationCD.php</h3>
+<p>"Information" page for the ETC - CD</p>
+<h3 id="viewinformationiagpolphp">/view/informationIAGPOL.php</h3>
+<p>"Information" page for the ETC - IAGPOL</p>
+<h3 id="viewinformationsparc4php">/view/informationSPARC4.php</h3>
+<p>"Information" page for the ETC - SPARC4</p>
+<h3 id="viewmenuphp">/view/menu.php</h3>
+<p>It's responsible for the side menu of all pages</p>
+<h3 id="viewoutputcdphp">/view/outputCD.php</h3>
+<p>Page with exits of ETC - CD</p>
+<h3 id="viewoutputiagpolphp">/view/outputIAGPOL.php</h3>
+<p>Page with exits of ETC - IAGPOL</p>
+<h3 id="viewoutputsparc4php">/view/outputSPARC4.php</h3>
+<p>Page with exits of ETC - SPARC4</p>
+<h3 id="viewrodapephp">/view/rodape.php</h3>
+<p>Page footer</p>
+<h3 id="viewrodape-governophp">/view/rodape-governo.php</h3>
+<p>Government footer</p>
+<h3 id="viewtabelasccdiagpolphp">/view/tabelasCCDIAGPOL.php</h3>
+<p>It contains the tables of the CCDs used in the ETC - IAGPOL</p>
+<h3 id="viewtopophp">/view/topo.php</h3>
+<p>Page Header</p>
+<h3 id="staticccd10127json">/static/CCD10127.json</h3>
+<p>It contains information regarding the CCD with serial number 10127. As: operating modes, pixel size and quantum efficiency</p>
+<h3 id="staticccd105json">/static/CCD105.json</h3>
+<p>It contains information regarding the CCD with serial number 105. As: operating modes, pixel size and quantum efficiency</p>
+<h3 id="staticccd106json">/static/CCD106.json</h3>
+<p>It contains information regarding the CCD with serial number 106. As: operating modes, pixel size and quantum efficiency</p>
+<h3 id="staticccd13739json">/static/CCD13739.json</h3>
+<p>It contains information regarding the CCD with serial number 13739. As: operating modes, pixel size and quantum efficiency</p>
+<h3 id="staticccd13740json">/static/CCD13740.json</h3>
+<p>It contains information regarding the CCD with serial number 13749. As: operating modes, pixel size and quantum efficiency</p>
+<h3 id="staticccd14912json">/static/CCD14912.json</h3>
+<p>It contains information regarding the CCD with serial number 14912. As: operating modes, pixel size and quantum efficiency</p>
+<h3 id="staticccd17587json">/static/CCD17587.json</h3>
+<p>It contains information regarding the CCD with serial number 17587. As: operating modes, pixel size and quantum efficiency</p>
+<h3 id="staticccd17588json">/static/CCD17588.json</h3>
+<p>It contains information regarding the CCD with serial number 17588. As: operating modes, pixel size and quantum efficiency</p>
+<h3 id="staticccd19002json">/static/CCD19002.json</h3>
+<p>It contains information regarding the CCD with serial number 19002. As: operating modes, pixel size and quantum efficiency</p>
+<h3 id="staticccd4269json">/static/CCD4269.json</h3>
+<p>It contains information regarding the CCD with serial number 4269. As: operating modes, pixel size and quantum efficiency</p>
+<h3 id="staticccd4335json">/static/CCD4335.json</h3>
+<p>It contains information regarding the CCD with serial number 4335. As: operating modes, pixel size and quantum efficiency</p>
+<h3 id="staticccd9867json">/static/CCD9867.json</h3>
+<p>It contains information regarding the CCD with serial number 9867. As: operating modes, pixel size and quantum efficiency</p>
+<h3 id="staticfilterjson">/static/filter.json</h3>
+<p>Information about Filters, among them we can mention: effective WaveLength, filter Width, fluxZero, sky transparency, tTel, tFilter, sky magnitude.</p>
+<h3 id="indexphp"><a href="https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/index.php">/index.php</a></h3>
+<p>It is responsible for generating the routes and calling the homepage.</p>
+<h2 id="workflow-of-project">WorkFlow of project</h2>
+<p>The execution of the program begins with the file index.php, this will create all the routes to the system and will call the route responsible for calling the ETC home page. The Router understands the request of that route and calls the callback method associated with that route, this method is in the APPController class, the method associated with loading the homepage of the site is the home () method and this method loads the home.php page in the screen.</p>
+<p>On the home page the user can choose which ETC to use, as a logic is equal for all ETCs will be explained only a working logic for an ETC - IAGPOL.</p>
+<p>When clicking on ETC IAGPOL an HTTP request is triggered and this is interpreted by the Router class and calls the method associated with this request, which in this case is the method of the class APPController loadForm () it will load the ETC page that the user wants to use . So the ETC - IAGPOL page will be loaded on the user's screen.</p>
+<p>After completing the form the user will click the button Calculate this button will generate an HTTP request that will be interpreted by the class Router that will call the callback method associated with this request, in this case will be the submitFormIAGPOL () method of the APPController class.</p>
+<p>The submitFormIAGPOL () method is responsible for picking up all user inputs and generating system responses from them. All inputs in the ETC form generate a value except the choice of the CCD that generates a JSON with the serial number and mode of operation of the chosen CCD. After picking up the user input values all objects related to observation will be generated, such as: filter, cdd, instrument, sky and observation, detail that depending on the mode of operation the signal signal reason, integration time and polarization error are generated in a different way. In addition to these, the set of values for the graph is generated.</p>
+<p>At this point all values have already been calculated and will be stored in a key-value associative Array and this array will be assigned to the server SESSION and finally the IAGPOL output page will be called, through an HTTP request.</p>
+<p>The request is interpreted by the Router and it calls the loadOutput method in the APPController class, this method will load the view outputIAGPOL.php.</p>
+<p>In the output screen, the graph is generated through the set of data retrieved from SESSION, then the response values of the calculations saved in the SESSION are taken and the values are shown to the user.</p>
+</body></html>

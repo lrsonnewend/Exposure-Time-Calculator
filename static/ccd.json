@@ -1,0 +1,838 @@
+{
+	"COMMENT":"CCD 105",
+	"1":{
+		"readoutNoise":2.5,
+		"gain": 2.5
+	},
+	"2":{
+		"readoutNoise": 4.0,
+		"gain":2.5
+	},
+	"COMMENT":"CCD 106",
+	"3":{
+		"readoutNoise": 4.1,
+		"gain":5.0
+	},
+	"4":{
+		"readoutNoise": 9.5,
+		"gain":5.0
+	},
+	"COMMENT":"CCD iKon 10127",
+	"5":{
+		"readoutNoise":68.8 ,
+		"gain":7.1
+	},
+	"6":{
+		"readoutNoise": 50.9,
+		"gain": 4.0
+	},
+	"7":{
+		"readoutNoise":32.3 ,
+		"gain": 2.0
+	},
+	"8":{
+		"readoutNoise": 28.2,
+		"gain":3.5
+	},
+	"9":{
+		"readoutNoise": 18.3 ,
+		"gain": 1.8
+	},
+	"10":{
+		"readoutNoise": 12.1 ,
+		"gain": 1.0
+	},
+	"11":{
+		"readoutNoise": 11.2 ,
+		"gain": 3.5
+	},
+	"12":{
+		"readoutNoise":6.9 ,
+		"gain":1.8
+	},
+	"13":{
+		"readoutNoise": 6.0 ,
+		"gain": 0.9
+	},
+	"14":{
+		"readoutNoise": 4.1 ,
+		"gain": 3.4
+	},
+	"15":{
+		"readoutNoise":3.2 ,
+		"gain": 1.8
+	},
+	"16":{
+		"readoutNoise": 2.9,
+		"gain": 0.9
+	},
+	"COMMENT":"CCD iKon 9867",
+	"17":{
+		"readoutNoise": 56.3 ,
+		"gain": 6.1
+	},
+	"18":{
+		"readoutNoise": 35.0,
+		"gain":3.3
+	},
+	"19":{
+		"readoutNoise": 29.7,
+		"gain":1.8
+	},
+	"20":{
+		"readoutNoise": 26.6,
+		"gain":3.7
+	},
+	"21":{
+		"readoutNoise": 16.6,
+		"gain": 2.0
+	},
+	"22":{
+		"readoutNoise": 12.2,
+		"gain":1.0
+	},
+	"23":{
+		"readoutNoise": 9.2,
+		"gain":3.5
+	},
+	"24":{
+		"readoutNoise":7.7 ,
+		"gain":1.9
+	},
+	"25":{
+		"readoutNoise": 6.3,
+		"gain":1.0
+	},
+	"26":{
+		"readoutNoise":3.9 ,
+		"gain":3.5
+	},
+	"27":{
+		"readoutNoise": 3.3 ,
+		"gain": 1.9
+	},
+	"28":{
+		"readoutNoise": 3.1,
+		"gain":1.0
+	},
+	"COMMENT": "CCD iKon 14912",
+	"29":{
+		"readoutNoise":51.2 ,
+		"gain":8.9
+	},
+	"30":{
+		"readoutNoise": 117.1,
+		"gain": 22.6
+	},
+	"31":{
+		"readoutNoise": 40.7,
+		"gain":4.8
+	},
+	"32":{
+		"readoutNoise": 87.8,
+		"gain":12.7
+	},
+	"33":{
+		"readoutNoise":31.0 ,
+		"gain": 2.3
+	},
+	"34":{
+		"readoutNoise": 77.1,
+		"gain": 7.0
+	},
+	"35":{
+		"readoutNoise": 19.6,
+		"gain":4.1
+	},
+	"36":{
+		"readoutNoise": 68.3,
+		"gain":14.2
+	},
+	"37":{
+		"readoutNoise": 13.0,
+		"gain":2.1
+	},
+	"38":{
+		"readoutNoise": 44.0,
+		"gain": 7.6
+	},
+	"39":{
+		"readoutNoise": 11.4,
+		"gain":1.2
+	},
+	"40":{
+		"readoutNoise": 37.0 ,
+		"gain": 4.1
+	},
+	"41":{
+		"readoutNoise": 9.6 ,
+		"gain": 3.8
+	},
+	"42":{
+		"readoutNoise": 39.3,
+		"gain":14.3
+	},
+	"43":{
+		"readoutNoise": 7.3,
+		"gain":2.1
+	},
+	"44":{
+		"readoutNoise": 24.5,
+		"gain": 7.1
+	},
+	"45":{
+		"readoutNoise": 6.9,
+		"gain":1.1
+	},
+	"46":{
+		"readoutNoise": 22.6,
+		"gain": 3.9
+	},
+	"47":{
+		"readoutNoise": 4.4,
+		"gain": 3.9
+	},
+	"48":{
+		"readoutNoise": 14.5,
+		"gain": 14.8
+	},
+	"49":{
+		"readoutNoise": 3.4,
+		"gain": 2.0
+	},
+	"50":{
+		"readoutNoise": 10.0,
+		"gain": 7.3
+	},
+	"51":{
+		"readoutNoise": 3.3,
+		"gain": 1.1
+	},
+	"52":{
+		"readoutNoise": 9.1,
+		"gain": 3.9
+	},
+	"COMMENT": "CCD iKon 17587",
+	"53":{
+		"readoutNoise": 55.9,
+		"gain":8.0
+	},
+	"54":{
+		"readoutNoise": 141.4,
+		"gain": 23.2
+	},
+	"55":{
+		"readoutNoise": 38.9,
+		"gain": 4.3
+	},
+	"56":{
+		"readoutNoise": 90.6,
+		"gain":12.4
+	},
+	"57":{
+		"readoutNoise": 28.9,
+		"gain": 2.2
+	},
+	"58":{
+		"readoutNoise": 66.7,
+		"gain":6.1
+	},
+	"59":{
+		"readoutNoise": 23.6,
+		"gain":4.0
+	},
+	"60":{
+		"readoutNoise": 73.5,
+		"gain":14.2
+	},
+	"61":{
+		"readoutNoise": 13.4 ,
+		"gain": 2.1
+	},
+	"62":{
+		"readoutNoise": 49.1,
+		"gain": 7.3
+	},
+	"63":{
+		"readoutNoise": 11.0,
+		"gain": 1.1
+	},
+	"64":{
+		"readoutNoise": 20.2,
+		"gain": 3.5
+	},
+	"65":{
+		"readoutNoise": 9.1,
+		"gain": 3.6
+	},
+	"66":{
+		"readoutNoise": 33.9,
+		"gain": 13.8
+	},
+	"67":{
+		"readoutNoise": 7.5,
+		"gain": 2.0
+	},
+	"68":{
+		"readoutNoise": 23.5,
+		"gain": 6.7
+	},
+	"69":{
+		"readoutNoise": 6.6,
+		"gain":1.0
+	},
+	"70":{
+		"readoutNoise": 20.2,
+		"gain":3.5
+	},
+	"71":{
+		"readoutNoise": 4.9,
+		"gain":3.7
+	},
+	"72":{
+		"readoutNoise": 14.7,
+		"gain": 14.2
+	},
+	"73":{
+		"readoutNoise": 4.3,
+		"gain":2.0
+	},
+	"74":{
+		"readoutNoise": 10.3,
+		"gain":6.8
+	},
+	"75":{
+		"readoutNoise": 3.3,
+		"gain": 1.1
+	},
+	"76":{
+		"readoutNoise": 9.5,
+		"gain":3.6
+	},
+	"COMMENT":"CCD iKon 13739",
+	"77":{
+		"readoutNoise": 47.1,
+		"gain":8.3
+	},
+	"78":{
+		"readoutNoise": 131.8,
+		"gain":27.1
+	},
+	"79":{
+		"readoutNoise": 43.1,
+		"gain":4.3
+	},
+	"80":{
+		"readoutNoise": 87.9,
+		"gain":14.6
+	},
+	"81":{
+		"readoutNoise": 30.3,
+		"gain":2.3
+	},
+	"82":{
+		"readoutNoise": 63.6,
+		"gain":7.1
+	},
+	"83":{
+		"readoutNoise": 18.3,
+		"gain":4.0
+	},
+	"84":{
+		"readoutNoise": 84.8,
+		"gain":17.9
+	},
+	"85":{
+		"readoutNoise": 12.3,
+		"gain":2.2
+	},
+	"86":{
+		"readoutNoise": 50.3,
+		"gain":9.3
+	},
+	"87":{
+		"readoutNoise": 10.2,
+		"gain":1.1
+	},
+	"88":{
+		"readoutNoise": 40.4,
+		"gain":5.0
+	},
+	"89":{
+		"readoutNoise": 9.7,
+		"gain":4.1
+	},
+	"90":{
+		"readoutNoise": 41.9,
+		"gain":18.4
+	},
+	"91":{
+		"readoutNoise": 7.4,
+		"gain":2.2
+	},
+	"92":{
+		"readoutNoise": 27.5,
+		"gain":9.3
+	},
+	"93":{
+		"readoutNoise": 6.0,
+		"gain":1.0
+	},
+	"94":{
+		"readoutNoise": 25.4,
+		"gain":5.1
+	},
+	"95":{
+		"readoutNoise": 4.5,
+		"gain":4.0
+	},
+	"96":{
+		"readoutNoise": 41.9,
+		"gain":18.4
+	},
+	"97":{
+		"readoutNoise": 4.4,
+		"gain":2.1
+	},
+	"98":{
+		"readoutNoise": 13.9,
+		"gain":9.6
+	},
+	"99":{
+		"readoutNoise": 3.7,
+		"gain":1.1
+	},
+	"100":{
+		"readoutNoise": 11.8,
+		"gain":5.1
+	},
+	"COMMENT":"CCD iKon 13740",
+	"101":{
+		"readoutNoise": 38.5,
+		"gain":7.7
+	},
+	"102":{
+		"readoutNoise": 116.5,
+		"gain":23.8
+	},
+	"103":{
+		"readoutNoise": 23.9,
+		"gain": 3.8
+	},
+	"104":{
+		"readoutNoise": 74.8,
+		"gain":13.3
+	},
+	"105":{
+		"readoutNoise": 22.9,
+		"gain":2.0
+	},
+	"106":{
+		"readoutNoise": 56.1,
+		"gain":6.3
+	},
+	"107":{
+		"readoutNoise": 17.4,
+		"gain":3.7
+	},
+	"108":{
+		"readoutNoise": 76.2,
+		"gain":16.3
+	},
+	"109":{
+		"readoutNoise": 11.8,
+		"gain":2.0
+	},
+	"110":{
+		"readoutNoise": 49.7,
+		"gain":9.0
+	},
+	"111":{
+		"readoutNoise": 8.8,
+		"gain":1.0
+	},
+	"112":{
+		"readoutNoise": 49.6,
+		"gain":6.1
+	},
+	"113":{
+		"readoutNoise": 9.7,
+		"gain":3.6
+	},
+	"114":{
+		"readoutNoise": 38.7,
+		"gain":16.3
+	},
+	"115":{
+		"readoutNoise": 7.1,
+		"gain": 1.9
+	},
+	"116":{
+		"readoutNoise": 29.9,
+		"gain":8.5
+	},
+	"117":{
+		"readoutNoise": 5.9,
+		"gain":1.0
+	},
+	"118":{
+		"readoutNoise": 25.1,
+		"gain":4.8
+	},
+	"119":{
+		"readoutNoise": 4.8,
+		"gain":3.8
+	},
+	"120":{
+		"readoutNoise": 17.5,
+		"gain": 16.8
+	},
+	"121":{
+		"readoutNoise": 4.4,
+		"gain":2.0
+	},
+	"122":{
+		"readoutNoise": 12.9,
+		"gain": 8.6
+	},
+	"123":{
+		"readoutNoise": 3.7,
+		"gain":1.0
+	},
+	"124":{
+		"readoutNoise": 11.6,
+		"gain":4.5
+	},
+	"COMMENT":"CCD iKon 17588",
+	"125":{
+		"readoutNoise": 39.0,
+		"gain":5.4
+	},
+	"126":{
+		"readoutNoise": 111.4,
+		"gain":17.4
+	},
+	"127":{
+		"readoutNoise": 30.8,
+		"gain":2.8
+	},
+	"128":{
+			"readoutNoise": 78.5,
+		"gain":9.1
+	},
+	"129":{
+		"readoutNoise": 24.2,
+		"gain":1.5
+	},
+	"130":{
+		"readoutNoise": 59.7,
+		"gain":5.0
+	},
+	"131":{
+		"readoutNoise": 17.3,
+		"gain":3.3
+	},
+	"132":{
+		"readoutNoise": 66.1,
+		"gain":13.0
+	},
+	"133":{
+		"readoutNoise": 11.0,
+		"gain":1.6
+	},
+	"134":{
+		"readoutNoise": 41.4,
+		"gain":7.1
+	},
+	"135":{
+		"readoutNoise": 11.1,
+		"gain":0.9
+	},
+	"136":{
+		"readoutNoise": 31.7,
+		"gain":3.4
+	},
+	"137":{
+		"readoutNoise": 9.0,
+		"gain":3.2
+	},
+	"138":{
+		"readoutNoise": 30.5,
+		"gain":12.7
+	},
+	"139":{
+		"readoutNoise": 6.9,
+		"gain":1.7
+	},
+	"140":{
+		"readoutNoise": 25.6,
+		"gain":6.7
+	},
+	"141":{
+		"readoutNoise": 6.9,
+		"gain": 1.7
+	},
+	"142":{
+		"readoutNoise": 24.6,
+		"gain":3.4
+	},
+	"143":{
+		"readoutNoise": 4.4,
+		"gain": 3.3
+	},
+	"144":{
+		"readoutNoise": 13.4,
+		"gain":13.0
+	},
+	"145":{
+		"readoutNoise": 3.8,
+		"gain":1.7
+	},
+	"146":{
+		"readoutNoise": 10.5,
+		"gain":6.9
+	},
+	"147":{
+		"readoutNoise": 3.4,
+		"gain":0.9
+	},
+	"148":{
+		"readoutNoise": 9.2,
+		"gain":3.6
+	},
+	"COMMENT":"CCD iXon 4269",
+	"149":{
+		"readoutNoise": 52.9,
+		"gain": 21.9
+	},
+	"150":{
+		"readoutNoise": 47.3,
+		"gain":10.3
+	},
+	"151":{
+		"readoutNoise": 72.5,
+		"gain": 48.2
+	},
+	"152":{
+		"readoutNoise": 45.0,
+		"gain":19.4
+	},
+	"153":{
+		"readoutNoise": 35.7,
+		"gain":8.8
+	},
+	"154":{
+		"readoutNoise": 53.1,
+		"gain":47.8
+	},
+	"155":{
+		"readoutNoise": 32.4,
+		"gain":19.3
+	},
+	"156":{
+		"readoutNoise": 26.6,
+		"gain":8.6
+	},
+	"157":{
+		"readoutNoise": 31.4,
+		"gain":18.5
+	},
+	"158":{
+		"readoutNoise": 19.5,
+		"gain":7.5
+	},
+	"159":{
+		"readoutNoise": 16.5,
+		"gain":3.4
+	},
+	"160":{
+		"readoutNoise": 14.4,
+		"gain":10.1
+	},
+	"161":{
+		"readoutNoise": 10.7,
+		"gain":4
+	},
+	"162":{
+		"readoutNoise": 9.6,
+		"gain":1.8
+	},
+	"163":{
+		"readoutNoise": 8.2,
+		"gain":3.8
+	},
+	"164":{
+		"readoutNoise": 6.3,
+		"gain":1.5
+	},
+	"165":{
+		"readoutNoise": 5.7,
+		"gain": 0.7
+	},
+	"COMMENT":"CCD iXon 4335",
+	"166":{
+		"readoutNoise": 56.5,
+		"gain":22.5
+	},
+	"167":{
+		"readoutNoise": 48.0,
+		"gain": 10.5
+	},
+	"168":{
+		"readoutNoise": 77.3,
+		"gain":49.8
+	},
+	"169":{
+		"readoutNoise": 48.9,
+		"gain":20.2
+	},
+	"170":{
+		"readoutNoise": 36.9,
+		"gain":8.9
+	},
+	"171":{
+		"readoutNoise": 51.9,
+		"gain":47.5
+	},
+	"172":{
+		"readoutNoise": 34.8,
+		"gain":19.8
+	},
+	"173":{
+		"readoutNoise": 28.7,
+		"gain":9
+	},
+	"174":{
+		"readoutNoise": 33.9,
+		"gain":20
+	},
+	"175":{
+		"readoutNoise": 20.5,
+		"gain":7.9
+	},
+	"176":{
+		"readoutNoise": 17.2,
+		"gain":3.6
+	},
+	"177":{
+		"readoutNoise": 14.4,
+		"gain":9.9
+	},
+	"178":{
+		"readoutNoise": 10.6,
+		"gain":3.9
+	},
+	"179":{
+		"readoutNoise": 9.3,
+		"gain":1.7
+	},
+	"180":{
+		"readoutNoise": 8.1,
+		"gain":3.7
+	},
+	"181":{
+		"readoutNoise": 6.3,
+		"gain":1.5
+	},
+	"182":{
+		"readoutNoise": 5.7,
+		"gain":0.7
+	},
+	"COMMENT":"CCD ikon 19002",
+	"183":{
+		"readoutNoise":42.2 ,
+		"gain":7.0
+	},
+	"184":{
+		"readoutNoise":124.1 ,
+		"gain":23.2
+	},
+	"185":{
+		"readoutNoise":29.6 ,
+		"gain":3.5
+	},
+	"186":{
+		"readoutNoise": 81.7,
+		"gain":11.6
+	},
+	"187":{
+		"readoutNoise": 23.1,
+		"gain":1.8
+	},
+	"188":{
+		"readoutNoise": 65.7,
+		"gain":6.8
+	},
+	"189":{
+		"readoutNoise": 24.1,
+		"gain":4.7
+	},
+	"190":{
+		"readoutNoise": 90.3,
+		"gain":17.3
+	},
+	"191":{
+		"readoutNoise": 14.8,
+		"gain":2.4
+	},
+	"192":{
+		"readoutNoise": 53.3,
+		"gain":9.5
+	},
+	"193":{
+		"readoutNoise": 10.2,
+		"gain":1.1
+	},
+	"194":{
+		"readoutNoise": 43.3,
+		"gain":5.3
+	},
+	"195":{
+		"readoutNoise":10.4 ,
+		"gain":4.3
+	},
+	"196":{
+		"readoutNoise": 45.2,
+		"gain":18.3
+	},
+	"197":{
+		"readoutNoise": 7.4,
+		"gain":2.1
+	},
+	"198":{
+		"readoutNoise": 28.2,
+		"gain":9.3
+	},
+	"199":{
+		"readoutNoise": 6.1,
+		"gain":1.1
+	},
+	"200":{
+		"readoutNoise": 26.1,
+		"gain":5.2
+	},
+	"201":{
+		"readoutNoise": 5.6,
+		"gain":4.4
+	},
+	"202":{
+		"readoutNoise": 28.0,
+		"gain":27.6
+	},
+	"203":{
+		"readoutNoise":4.5 ,
+		"gain":2.1
+	},
+	"204":{
+		"readoutNoise": 19.1,
+		"gain":13.7
+	},
+	"205":{
+		"readoutNoise": 4.1,
+		"gain":1.1
+	},
+	"206":{
+		"readoutNoise": 11.9,
+		"gain":5.1
+	}
+}

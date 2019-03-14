@@ -1,0 +1,15 @@
+{
+    "name": "lucas/exposure-time-calculator",
+    "authors": [
+        {
+            "name": "Lucas Almeida Salvador",
+            "email": "lucas.salvador11358@gmail.com"
+        }
+    ],
+    "autoload": {
+    	"psr-4": {
+    		"App\\": "source"
+    	}
+    },
+    "require": {}
+}

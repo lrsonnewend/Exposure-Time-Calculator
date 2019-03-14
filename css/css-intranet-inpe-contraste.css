@@ -1,0 +1,350 @@
+body.contraste a{color:#fff !important; text-decoration:none !important;}
+body.contraste a:hover{color:#ff0 !important; text-decoration:underline !important;}
+
+/* ====================================== */
+/* TOPO - CONTRASTE */
+
+body.contraste #barra-brasil, 
+body.contraste .link-vlibras {background: #000 !important;}
+body.contraste .fundo-topo{background: #000 !important; /* Old browsers */}
+body.contraste .fundo-topo a{color:#fff !important; text-decoration:none !important;}
+body.contraste .fundo-topo a:visited, 
+body.contraste .fundo-topo a:active{color:#fff !important;}
+body.contraste .fundo-topo a:hover{color:#ff0 !important;}
+
+body.contraste #topo .ir-para span{
+	background:#fff !important; 
+	color:#000 !important; 
+}
+
+
+/* GOOGLE TRANSLATOR - CONTRASTE */
+body.contraste #google_translate_element div.goog-te-gadget-simple{background-color:#000 !important;}
+body.contraste #google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover{color:#ff0 !important;}
+
+body.contraste #topo .botao-buscar{
+	border:1px solid #fff; 
+	color: #fff;
+	background:url(/img/search-button-contraste.png) no-repeat #252525 right;
+}
+
+body.contraste .faixa-topo{background:#333 !important;}
+body.contraste .faixa-topo a{color:#fff !important; text-decoration:none !important;}
+body.contraste .faixa-topo a:visited, 
+body.contraste .faixa-topo a:active{color:#fff !important; text-decoration:none !important;}
+body.contraste .faixa-topo a:hover{color:#ff0 !important; text-decoration:none !important;}
+body.contraste .faixa-topo ul li{border-right: 1px solid #fff !important;}
+body.contraste .faixa-topo ul li:last-child{border-right:none !important;}
+
+/* ====================================== */
+/* FIM DO TOPO */
+
+
+
+/* ====================================== */
+/* CONTEUDO - CONTRASTE */
+
+body.contraste strong.alerta{color: #ff0 !important; border-top: 3px solid #ff0 !important;}
+body.contraste strong.sucesso{color: #fff !important; border-top: 3px solid #fff !important;}
+
+body.contraste .slider-holder .slider-change{background-color:#ff0 !important; color: #000 !important;}
+body.contraste .slider-holder .button-holder{background-color:rgba(255, 255, 255, 0.75) !important;}
+body.contraste .slider-holder .image-holder span{color:#000 !important;}
+
+body.contraste .txVermelho,
+body.contraste .txAzul, 
+body.contraste .txAzulEscuro{color: #ff0 !important;}
+body.contraste .borderRight{border-right: 1px solid #fff;}
+
+body.contraste img {
+	-webkit-filter: grayscale(100%) !important;
+    -moz-filter: grayscale(100% !important);
+    -ms-filter: grayscale(100%) !important;
+    -o-filter: grayscale(100%) !important;
+	filter: grayscale(100%) !important;
+}
+
+body.contraste #searchGadget, body.contraste .LSBox input.searchButton{
+	-webkit-filter: grayscale(100%) !important;
+    -moz-filter: grayscale(100% !important);
+    -ms-filter: grayscale(100%) !important;
+    -o-filter: grayscale(100%) !important;
+	filter: grayscale(100%) !important;
+}
+
+body.contraste #content ul.pdf li:before{	
+	-webkit-filter: grayscale(100%) !important;
+    -moz-filter: grayscale(100% !important);
+    -ms-filter: grayscale(100%) !important;
+    -o-filter: grayscale(100%) !important;
+	filter: grayscale(100%) !important;
+}
+
+body.contraste #content ul li a:active, 
+body.contraste #content  ol li a:visited, 
+body.contraste #content ol li a{color: #ff0 !important;}
+body.contraste #content ol li a:hover{color: #ff0 !important; text-decoration:underline !important;}
+
+body.contraste #content a.download:after{color:#fff !important;}
+
+body.contraste #content .boxCinzaEscuro{background-color:#000 !important; border:1px solid #fff !important;}
+body.contraste #content .boxAzul{background-color:#000 !important; border:1px solid #fff !important;}
+body.contraste #content .boxCinza {background: #000 !important; border:1px solid #fff !important;}
+
+body.contraste p.section:hover{color:#ff0 !important;}
+body.contraste a:hover p.section{color:#ff0 !important;}
+
+body.contraste .dropdown-menu{background-color:#000 !important;}
+body.contraste .datepicker table tr td span.active:active, 
+body.contraste .datepicker table tr td span.active:hover:active, 
+body.contraste .datepicker table tr td span.active.disabled:active, 
+body.contraste .datepicker table tr td span.active.disabled:hover:active, 
+body.contraste .datepicker table tr td span.active.active, 
+body.contraste .datepicker table tr td span.active:hover.active, 
+body.contraste .datepicker table tr td span.active.disabled.active, 
+body.contraste .datepicker table tr td span.active.disabled:hover.active, 
+body.contraste .open > .dropdown-toggle.datepicker table tr td span.active, 
+body.contraste .open > .dropdown-toggle.datepicker table tr td span.active:hover, 
+body.contraste .open > .dropdown-toggle.datepicker table tr td span.active.disabled, 
+body.contraste .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover{
+	background-color: #ff0 !important;
+	color: #000 !important;
+}
+
+body.contraste .datepicker table tr td span:hover{background-color:#fff !important; color:#000 !important;}
+
+
+body.contraste #content p a:hover{color: #ff0 !important;}
+
+body.contraste #content a:active address, 
+body.contraste #content a:visited address, 
+body.contraste #content a address{color: #fff !important;}
+body.contraste #content a:active address, 
+body.contraste #content a:visited address, 
+body.contraste #content a address:hover{color: #ff0 !important;}
+
+body.contraste #content .documentByLine a:hover{color: #ff0 !important;}
+
+body.contraste span.error{color: #ff0 !important;}
+body.contraste span.buscaerror{color: #ff0 !important;}
+
+body.contraste #portal-breadcrumbs a, 
+body.contraste #portal-breadcrumbs span{color:#fff !important;}
+body.contraste #portal-breadcrumbs > span > a:hover{color:#ff0 !important; text-decoration:underline !important;}
+
+body.contraste #content h1{color:#fff !important;}
+
+body.contraste #content div.titulo{
+	color:#fff !important; 
+	background-color:#000 !important; 
+	border-top:solid 4px #fff !important; 
+	border-bottom:1px solid #fff !important; 
+}
+
+body.contraste #content .outstanding-header{
+	color:#fff !important; 
+	background-color:#000 !important; 
+	border-top:solid 2px #fff !important; 
+}
+
+body.contraste #content .outstanding-header a {background: url(/img/seta_branca.png) no-repeat scroll right 0px transparent !important;}
+
+body.contraste #content ul li a:hover{color: #ff0 !important;}
+
+body.contraste #voltar-topo a{background: url(/img/voltar-topo-contraste.png) no-repeat left center !important;}
+
+
+body.contraste .link-externo{border: 1px solid #fff !important;}
+body.contraste .link-externo .tile-header, 
+body.contraste .link-externo .tile-title{background: #000 !important; border-bottom:1px solid #fff !important;}
+body.contraste .link-externo .collection-item.even{background: #000 !important;}
+body.contraste .link-externo .collection-item.odd{background-color:#000 !important;}
+body.contraste #content #previsao ul.titulo{border-bottom: 1px solid #fff !important; background-color: #000 !important;}
+body.contraste #previsao ul li ul:nth-child(2n){background: #333 !important}
+body.contraste #content #previsao .botoes{
+	background-color: #000 !important;
+    border-bottom: 1px solid #fff !important;
+    border-top: 1px solid #fff !important;
+}
+body.contraste #previsao .busca{background-color: #000 !important;}
+body.contraste button.botao{
+	color: #000 !important;
+    background-color: #ff0 !important;
+    border-color: #ff0 !important;
+}
+body.contraste button.botao:hover{background-color: #ffff66 !important;}
+body.contraste #previsao .azul{color: #fff !important;}
+body.contraste #previsao .vermelho{color: #fff !important;}
+
+body.contraste .lista-vertical{border: 1px solid #fff !important; background: #000 !important;}
+body.contraste .lista-vertical .tile-header h3, 
+body.contraste .lista-vertical .tile-header span{color: #fff !important;}
+body.contraste .lista-vertical .list-item a, 
+body.contraste .lista-vertical .collection-item a{color: #fff !important;}
+body.contraste .lista-vertical .list-item a:hover, 
+body.contraste .lista-vertical .collection-item a:hover{color: #ff0 !important;}
+
+body.contraste #content .lista-vertical.verdeClaro,
+body.contraste #content .lista-vertical.amareloClaro{background-color:#000 !important;}
+body.contraste #content .lista .coluna-1 .data, 
+body.contraste #content .lista-vertical .data{color: #fff !important;}
+
+body.contraste #content .lista .coluna-1 .data{color: #fff !important;}
+
+body.contraste #portal-column-two dl.portlet, 
+body.contraste #content dl.portlet{border: 1px solid #fff !important; background: #000 !important;}
+body.contraste #content .portletWrapper dl.portlet dd.branco{background-color:#000 !important;}
+
+body.contraste #masterdiv .esconde{background: #000 !important; border: 1px solid #fff !important;}
+body.contraste #masterdiv .esconde:hover{color:#ff0 !important;}
+
+body.contraste #content table.cinza{border: 1px solid #fff !important;}
+body.contraste #content table.cinza caption{background-color: #000 !important;}
+body.contraste #content table.cinza tr th{background-color: #000 !important;}
+body.contraste #content table.cinza tr:nth-child(2n+1){background-color: #333 !important;}
+body.contraste #content table a:hover{color: #ff0 !important;}
+body.contraste #content table a:hover address{color: #ff0 !important;}
+
+
+body.contraste #content .busca-grande{border-top: 5px solid #ff0 !important; background-color: #333 !important;}
+body.contraste #content .busca-grande legend{color: #ff0 !important;}
+body.contraste #content .busca-grande button.searchButton{
+	color: #000 !important;
+    background-color: #ff0 !important;
+    border-color: #ff0 !important;
+}
+body.contraste #content .busca-grande button.searchButton:hover{background-color: #ffff66 !important;}
+
+body.contraste #content .busca-grande select{color: #000 !important;}
+
+body.contraste #content div.documentByLine.noticia, 
+body.contraste #content div.documentByLine.noticia a{color: #fff !important;}
+
+body.contraste #content .coluna-3 span.descricao{color:#ff0 !important;}
+
+body.contraste .modal-content{background-color:#333 !important; border:1px solid #fff !important;}
+body.contraste .btn-primary{
+	color: #000 !important;
+    background-color: #ff0 !important;
+    border-color: #ff0 !important;
+	background-image:none !important;
+}
+body.contraste .btn-primary:hover{background-color: #ffff66 !important;}
+
+body.contraste #content form.cadastro{background-color:#000 !important; }
+body.contraste #content form.cadastro fieldset{background-color:#000 !important; border:1px solid #fff !important;}
+body.contraste #content form.cadastro fieldset legend{color: #ff0 !important; border-bottom: 1px solid #ff0;}
+body.contraste #content form.cadastro i.obs{color: #ff0 !important;}
+body.contraste #content button.searchButton{
+	color: #000 !important;
+    background-color: #ff0 !important;
+    border-color: #ff0 !important;
+}
+body.contraste input{color: #000 !important;}
+body.contraste button.link{color: #ff0 !important;}
+
+body.contraste #content button.searchButton:hover{background-color: #ffff66 !important;}
+
+
+body.contraste .mapaSite #navigation .titulo{color: #fff !important; background:none !important; border:none !important;}
+
+body.contraste .mapaSite .cd-accordion-menu ul label:hover {color:#fff !important;} 
+body.contraste .mapaSite .cd-accordion-menu ul a:hover {color:#ff0 !important;}
+
+body.contraste .mapaSite .cd-accordion-menu ul ul label, 
+body.contraste .mapaSite .cd-accordion-menu ul ul a{color:#fff !important;}
+
+body.contraste .mapaSite ul li a:active, 
+body.contraste .mapaSite ul li a:visited, 
+body.contraste .mapaSite ul li a {color: #fff !important;}
+
+/* ====================================== */
+/* FIM CONTEUDO */
+
+
+/* ====================================== */
+/* RODAPE - CONTRASTE */
+
+body.contraste .rodape-inpe {background:#000 !important;}
+
+body.contraste .rodope-logo-governo {background-color:#000 !important;}
+
+body.contraste .assina-inpe {background-color:#000 !important;}
+
+body.contraste .rodape-inpe .conteudo-rodape ul li span{color: #fff !important;}
+
+body.contraste .rodape-inpe .conteudo-rodape ul li{border-left: 1px dotted #fff !important;}
+body.contraste .rodape-inpe .conteudo-rodape ul li ul li{border-left:none !important;}
+
+body.contraste .rodape-inpe .conteudo-rodape a, 
+body.contraste .rodape-inpe .conteudo-rodape label{color:#fff !important;}
+body.contraste .rodape-inpe .conteudo-rodape a:visited, 
+body.contraste .rodape-inpe .conteudo-rodape a:active{color:#fff !important;}
+body.contraste .rodape-inpe .conteudo-rodape a:hover, 
+body.contraste .rodape-inpe .conteudo-rodape label:hover{color:#ff0 !important;}
+
+
+/* FIM RODAPE */
+/* ====================================== */
+
+
+
+/* ====================================== */
+/* BUSCA GOOGLE */
+
+body.contraste .gsc-control-cse{background-color:#000 !important; color:#fff !important;}
+body.contraste .gsc-tabHeader.gsc-tabhActive{border-color: #fff !important; background-color: #000 !important; color: #fff !important;}
+body.contraste .gsc-tabHeader.gsc-tabhInactive{background-color: #000 !important;}
+body.contraste .gsc-webResult.gsc-result, 
+body.contraste .gsc-results .gsc-imageResult{border-color: #000 !important; background-color: #000 !important;}
+body.contraste .gs-webResult .gs-snippet, 
+body.contraste .gs-imageResult .gs-snippet, 
+body.contraste .gs-fileFormatType{color: #fff !important;}
+body.contraste .gsc-result-info{color: #fff !important;}
+body.contraste .gsc-branding-text, 
+body.contraste .gcsc-branding-text{color: #fff !important;}
+body.contraste span.gs-fileFormat{color: #ff0 !important;}
+
+body.contraste .gs-webResult.gs-result a.gs-title:visited, 
+body.contraste .gs-webResult.gs-result a.gs-title:visited b, 
+body.contraste .gs-imageResult a.gs-title:visited, 
+body.contraste .gs-imageResult a.gs-title:visited b{color: #fff !important;}
+body.contraste .gsc-webResult.gsc-result:hover, 
+body.contraste .gsc-imageResult:hover{background-color: #000 !important;}
+body.contraste .gsc-selected-option{color: #000 !important;}
+body.contraste .gs-webResult div.gs-visibleUrl, 
+body.contraste .gs-imageResult div.gs-visibleUrl{color: #ff0 !important;}
+
+
+/* ====================================== */
+/* FIM BUSCA GOOGLE */
+
+
+
+
+/*========================================*/
+/* EVENTOS */
+body.contraste .rodape-inpe .conteudo-rodape span{color:#fff !important;}
+body.contraste #navigation.evento .titulo{background:none !important;}
+body.contraste #navigation.evento .cd-accordion-menu li ul li{border-bottom: 1px solid #fff !important;}
+body.contraste .faixa-topo #navigation.evento ul li ul li{border-right: none !important;}
+body.contraste #navigation.evento .cd-accordion-menu label, body.contraste #navigation.evento .cd-accordion-menu a{border-top:none !important;}
+body.contraste #navigation.evento .titulo{margin-bottom:0px !important;}
+body.contraste #navigation.evento a.on{color:#fff !important;}
+body.contraste #navigation.evento ul.cd-accordion-menu{background-color:#333 !important;}
+body.contraste #navigation.evento .cd-accordion-menu label, body.contraste #navigation.evento .cd-accordion-menu a{background-color:#333 !important;}
+
+
+@media only screen and (max-width: 768px){
+	body.contraste .faixa-topo ul.inpe li{border-bottom: 3px solid #fff !important;}
+	body.contraste .faixa-topo #navigation.evento li {border-right:0px !important; border-bottom:1px solid #fff !important;}
+}
+
+
+
+
+
+/* EVENTOS */
+/*========================================*/
+
+

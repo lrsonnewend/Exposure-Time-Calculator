@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Topo */
+#topo .topo-logotipo{min-width:50%;}
+
+
+/* Rodapé */
+.rodape-inpe{background: #f2f2f2;padding: 20px 0px 5px 0px;}
+.rodape-inpe .conteudo-rodape ul li span{color: #0f4098;}
+.rodape-inpe .conteudo-rodape span{
+	font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 10px;
+    display: block;
+    font-family: "open_sansbold", Arial, Helvetica, sans-serif;
+	color: #0f4098;
+}
+.rodape-inpe .conteudo-rodape ul li{border-left: 1px dotted #0f4098;}
+.rodape-inpe .conteudo-rodape a:visited, .rodape-inpe .conteudo-rodape a:active{color: #0f4098 !important;}
+.rodape-inpe .conteudo-rodape a{color: #0f4098 !important;}
+.rodape-inpe .conteudo-rodape a img{outline: none !important;}
+/*.rodape-inpe .conteudo-rodape > .left{margin:20px 20px 20px 0;}*/
+
+
+@media only screen and (max-width: 850px){
+	.rodape-inpe{display:block; padding: 20px 10px 5px 10px;}
+}
+
+

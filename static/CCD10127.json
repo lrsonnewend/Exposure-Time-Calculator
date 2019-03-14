@@ -1,0 +1,62 @@
+{
+	"QuantumEfficiency":
+  {
+    "U": 0.56,
+    "B":0.79,
+    "V":0.81,
+    "R":0.78,
+    "I":0.69
+  },
+  "PixelSize": 0.0135,
+  "Modes":
+  {
+    "1":{
+      "readoutNoise":68.8 ,
+      "gain":7.1
+    },
+    "2":{
+      "readoutNoise": 50.9,
+      "gain": 4.0
+    },
+    "3":{
+      "readoutNoise":32.3 ,
+      "gain": 2.0
+    },
+    "4":{
+      "readoutNoise": 28.2,
+      "gain":3.5
+    },
+    "5":{
+      "readoutNoise": 18.3 ,
+      "gain": 1.8
+    },
+    "6":{
+      "readoutNoise": 12.1 ,
+      "gain": 1.0
+    },
+    "7":{
+      "readoutNoise": 11.2 ,
+      "gain": 3.5
+    },
+    "8":{
+      "readoutNoise":6.9 ,
+      "gain":1.8
+    },
+    "9":{
+      "readoutNoise": 6.0 ,
+      "gain": 0.9
+    },
+    "10":{
+      "readoutNoise": 4.1 ,
+      "gain": 3.4
+    },
+    "11":{
+      "readoutNoise":3.2 ,
+      "gain": 1.8
+    },
+    "12":{
+      "readoutNoise": 2.9,
+      "gain": 0.9
+    }
+  }
+}
