@@ -40,6 +40,7 @@
  	// Defining mode
 	if($mode==1)
  	{
+ 		$dif = 1;
  		$inTime = $time;
 		$inSigma = 0;
  		$observation->setTimeExposureCD(1,$time);
@@ -47,11 +48,14 @@
  		
  		$observation->setSignalNoiseRatioCD(1,$observation->getNumberPhotons(), $time, $observation->getNumberPixels(), $sky->getNumberPhotons(), $instrument->getCCD()->getReadoutNoise(),$instrument->getCCD()->getGain(), $ccd->getBinning());
 
-		$observation->setSigmaM(1, $observation->getSignalNoiseRatioCD(), $nwp); 
- 		
+		$observation->setSigmaM(1, $observation->getSignalNoiseRatioCD(), $nwp);
+
  	}
+
  	else
  	{
+
+ 		$dif = 2;
  		$inTime = 0;
 		$inSigma = $sigmaM;
 
@@ -60,12 +64,19 @@
 		$observation->setSignalNoiseRatioCD(2,0,0,0,0,0,0,0,1,$sigmaM,$nwp);
 
 		$observation->setTimeExposureCD(2,0, $observation->getNumberPhotons(), $observation->getSignalNoiseRatioCD(), $observation->getNumberPixels(), $sky->getNumberPhotons(), $instrument->getCCD()->getReadoutNoise(), $instrument->getCCD()->getGain(), $ccd->getBinning(), $observation->getSigmaM());
- 	}
- 	$snr = $observation->getSignalNoiseRatioCD();
+
+		
+
+ 	
+	}
+
+	$snr = $observation->getSignalNoiseRatioCD();
 	$sigmaM = $observation->getSigmaM();
+ 	
 	//Generate Data set
- 	$graph = new Graphics($observation, $sky, $instrument);
-	$data = $graph->generateValues($observation->getTimeExposureCD(), $nwp, $wave);
+	$graph = new Graphics($observation, $sky, $instrument);
+ 	$data = $graph->generateValuesCD($dif, $observation->getTimeExposureCD(), $nwp);
+	
 	$results = array(
 				'inMag' => $magnitude,
 				//'inNwp' => $nwp,

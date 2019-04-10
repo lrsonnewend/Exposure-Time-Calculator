@@ -133,5 +133,57 @@
 			//It's retorning the Array
 			return $data;
 		}
+
+
+
+
+
+		public function generateValuesCD($dif, $timeIntegration, $nwp)
+		{
+			// To determine to $timeRange ends in 500 or $timeIntegration
+			if($timeIntegration>500)
+			{
+				$timeRange = $timeIntegration;
+			}
+			else
+			{
+				$timeRange = 500;
+			}
+			$data = array();
+			// It's defining the values at $time = 1s
+			
+			
+	 		$this->getObservation()->setSignalNoiseRatioCD(1,$this->getObservation()->getNumberPhotons(), 1, $this->getObservation()->getNumberPixels(), $this->getSky()->getNumberPhotons(),$this->getInstrument()->getCCD()->getReadoutNoise(),$this->getInstrument()->getCCD()->getGain(), $this->getInstrument()->getCCD()->getBinning());
+
+			$this->getObservation()->setSigmaM(1,$this->getObservation()->getSignalNoiseRatioCD(),$nwp);
+
+
+				
+			//It's Setting the values to 1s
+
+				$data[] = array('',1, round($this->getObservation()->getSigmaM(),3));
+
+			
+
+
+			//It's Defining the values begin 10 to $timeRange in step 10
+			for ($time=10; $time <=$timeRange; $time+=10) 
+			{ 	
+				
+				
+			 	$this->getObservation()->setSignalNoiseRatioCD(1,$this->getObservation()->getNumberPhotons(), $time, $this->getObservation()->getNumberPixels(), $this->getSky()->getNumberPhotons(),$this->getInstrument()->getCCD()->getReadoutNoise(),$this->getInstrument()->getCCD()->getGain(),  $this->getInstrument()->getCCD()->getBinning());
+
+				$this->getObservation()->setSigmaM(1,$this->getObservation()->getSignalNoiseRatioCD(),$nwp);
+				
+				//It's Saving the values in Array
+
+				$data[] = array('',$time, round($this->getObservation()->getSigmaM(),3));
+
+
+			}
+
+			//It's retorning the Array
+			return $data;
+		}
 	}
 ?>
