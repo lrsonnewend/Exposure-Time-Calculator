@@ -37,13 +37,12 @@
 	$sky = new Sky($tSky, $airMass,$filter, $moon , $instrument->getCCD()->getQuanTumEfficiency(), $filtro->getFluxZero(), $filtro->getFilterWidth(), $filtro->getEffectiveLenght(), $instrument->getAperture(), $instrument->getPlateScale(),1, $ccd->getBinning(), $instrument->getFArea(), $instrument->getTInstr(), $instrument->getTFilter());
 	
 	$observation = new Observation($instrument->getCCD()->getQuanTumEfficiency(), $sky->getTransparencySky(), $filtro->getFluxZero(), $filtro->getFilterWidth(), $filtro->getEffectiveLenght(), $instrument->getAperture(), $magnitude, $aperture, $instrument->getPlateScale(), 1, $ccd->getBinning(), $instrument->getFArea(), $instrument->getTInstr(), $instrument->getTFilter());
+ 	
  	// Defining mode
 	if($mode==1)
  	{
- 		$dif = 1;
- 		$inTime = $time;
-		$inSigma = 0;
- 		$observation->setTimeExposureCD(1,$time);
+ 
+ 		$observation->setTimeExposure(1,$time);
  		//Generate values according WavePlate 
  		
  		$observation->setSignalNoiseRatioCD(1,$observation->getNumberPhotons(), $time, $observation->getNumberPixels(), $sky->getNumberPhotons(), $instrument->getCCD()->getReadoutNoise(),$instrument->getCCD()->getGain(), $ccd->getBinning());
@@ -54,16 +53,13 @@
 
  	else
  	{
-
- 		$dif = 2;
- 		$inTime = 0;
-		$inSigma = $sigmaM;
+ 
 
 		$observation->setSigmaM(3,0,0,$sigmaM);
 
 		$observation->setSignalNoiseRatioCD(2,0,0,0,0,0,0,0,1,$sigmaM,$nwp);
 
-		$observation->setTimeExposureCD(2,0, $observation->getNumberPhotons(), $observation->getSignalNoiseRatioCD(), $observation->getNumberPixels(), $sky->getNumberPhotons(), $instrument->getCCD()->getReadoutNoise(), $instrument->getCCD()->getGain(), $ccd->getBinning(), $observation->getSigmaM());
+		$observation->setTimeExposure(2,0, $observation->getNumberPhotons(), $observation->getSignalNoiseRatioCD(), $observation->getNumberPixels(), $sky->getNumberPhotons(), $instrument->getCCD()->getReadoutNoise(), $instrument->getCCD()->getGain(), $ccd->getBinning(), $observation->getSigmaM());
 
 		
 
@@ -75,7 +71,7 @@
  	
 	//Generate Data set
 	$graph = new Graphics($observation, $sky, $instrument);
- 	$data = $graph->generateValuesCD($dif, $observation->getTimeExposureCD(), $nwp);
+ 	$data = $graph->generateValuesCD($observation->getTimeExposure(), $nwp);
 	
 	$results = array(
 				'inMag' => $magnitude,
@@ -93,7 +89,7 @@
 				'inTsky' => $tSky,
 				'numberPixels' => $observation->getNumberPixels() ,
 				'numberPhotons' => $observation->getNumberPhotons(),
-				'timeExposure' =>  $observation->getTimeExposureCD(),
+				'timeExposure' =>  $observation->getTimeExposure(),
 				'snr' => $snr,
 				'sigmaM' => $sigmaM,
 				//'sigmaV' => $sigmaV,

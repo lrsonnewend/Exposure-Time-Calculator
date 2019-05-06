@@ -19,7 +19,7 @@
 		# Get the pixel coordinates of the data points for the best and worst:
 		list($time_x, $sigma_y) = $plot->GetDeviceXY($GLOBALS['time'], $GLOBALS['sigmaM']);
 		# Draw ellipses centered on those two points:
-		imageellipse($img, $time_x, $sigma_y, 50, 20, $green);
+		imageellipse($img, $time_x, $sigma_y, 50, 17, $green);
 		# Place some text above the points:
 		$font = '3';
 		$fh = imagefontheight($font);
@@ -65,10 +65,10 @@
 		<section class="values">
 			<h2> Final values</h2>
 			<?php
-				echo '<span>Integration time: </span> '.number_format($time).' s<br>';
-				echo '<span>Error of the magnitude: </span> '.number_format($sigmaM,3).' mag<br>';
-		
-				echo '<span> Integrated signal noise ratio: </span> '.number_format($snr,2).'<br>';
+				echo '<span>Integration time: </span> '.($time).' s<br>';
+				echo '<span>Error of the magnitude: </span> '.($sigmaM).' mag<br>';
+
+				echo '<span> Integrated signal noise ratio: </span> '.($snr).'<br>';
 			?>
 			<button onclick="window.print()" style="font-size: 15pt;">Print results</button>
 		</section>

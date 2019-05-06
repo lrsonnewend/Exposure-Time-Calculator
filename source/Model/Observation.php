@@ -225,8 +225,8 @@
  		//When ETC is in Mode 2 (Sigma -> Int. Time)
  		elseif($type==2)
  		{
- 			$snr = $k * (100/sqrt($nwp)) * (1/$sigma);
- 			$this->signalNoiseRatio = $snr;
+      $snr = $k * (100/sqrt($nwp)) * (1/$sigma);
+      $this->signalNoiseRatio = $snr;
  		}
  	}
  	/**
@@ -257,12 +257,12 @@
     //When ETC is in Mode 1 (Int. Time -> Sigma)
     if($type == 1)
     {   
-      $this->signalNoiseRatio = $n*$t/sqrt($n*$t+2*$nPix*($nS*$t + $binning * pow($nR,2) + pow(0.289, 2) * pow($g,2)));   
+      $this->signalNoiseRatio = $n*$t/sqrt($n*$t+2*$nPix*($nS*$t + $binning * pow($nR,2) + (pow(0.289, 2) * pow($g,2))));   
     }
     //When ETC is in Mode 2 (Sigma -> Int. Time)
     elseif($type==2)
     {
-      $snr = $k * $nwp * (1/$sigma);
+      $snr = (1/$sigma);
       
       $this->signalNoiseRatio = $snr;
     }

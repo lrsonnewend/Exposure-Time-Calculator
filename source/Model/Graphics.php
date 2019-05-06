@@ -138,17 +138,18 @@
 
 
 
-		public function generateValuesCD($dif, $timeIntegration, $nwp)
+		public function generateValuesCD($timeIntegration, $nwp)
 		{
 			// To determine to $timeRange ends in 500 or $timeIntegration
-			if($timeIntegration>150)
+			if($timeIntegration>20)
 			{
 				$timeRange = $timeIntegration;
 			}
 			else
 			{
-				$timeRange = 150;
+				$timeRange = 20;
 			}
+			
 			$data = array();
 			// It's defining the values at $time = 1s
 			
@@ -167,7 +168,7 @@
 
 
 			//It's Defining the values begin 10 to $timeRange in step 10
-			for ($time=1; $time <=$timeRange; $time+=5)
+			for ($time=1; $time <=$timeRange; $time+=4)
 			{ 	
 				
 				
@@ -177,7 +178,7 @@
 				
 				//It's Saving the values in Array
 
-				$data[] = array('',$time, round($this->getObservation()->getSigmaM(),4));
+				$data[] = array('',$time, round($this->getObservation()->getSigmaM(),3));
 
 
 			}

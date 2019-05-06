@@ -54,48 +54,21 @@
 						<div id="content">
 
 							<h1 class="documentFirstHeading">Exposure Time Calculator (ETC)</h1>
-							<div class="box">
-								<!-- Begin card IAGPOL-->
-								<div class="card">
-									<div class="container">
-										<a href=""><h3><b>ETC - IAGPOL</b></h3></a>
-									</div>
-									<div class="container">
-											<a href="formIAGPOL.php"><img src="img/pe1.jpg" alt="img pe1"></a>
-									</div>
-								</div>
-								<!-- End Card IAGPOL -->
-								<!-- Begin Card SPARC4 -->
-								<div class="card">
-									<div class="container">
-										<a href=""><h3><b>ETC - SPARC4</b></h3></a>
-									</div>
-									<div class="container">
-											<a href="formSPARC4.php"><img src="img/pe1.jpg" alt="img pe1"></a>
-									</div>
-								</div>
-								<!--End Card SPARC4 -->
-								<!-- Begin Card CD-->
-
-								<div class="card">
-									<div class="container">
-										<a href=""><h3><b>ETC - CCD Imager</b></h3></a>
-									</div>
-									<div class="container">
-										<a href="formCD.php"><img src="img/pe1.jpg" alt="img pe1"></a>
-									</div>
-								</div>
-								<!--End Card CD -->
-							</div>
-                            
-                            <p>
-                            <strong>Desenvolvido por <a href="http://www.cea.inpe.br/" title="Acesse COCTI/INPE" target="_blank">CEA/INPE</a></strong>
-                            </p>
 							
+							<p>Use the lateral menu to choose the instrument ETC you would like to use.</p>
+							<img src="img/pe1.jpg" width="530px"><br>
+							<a href="http://lnapadrao.lna.br/OPD" title = "Laboratório Nacional de Astrofísica" target="_blank">http://lnapadrao.lna.br/OPD </a>
+
+							
+                           <p><p>
+                            <strong>Desenvolvido por <a href="http://www.cea.inpe.br/" title="Acesse COCTI/INPE" target="_blank">CEA/INPE</a></strong>
+                          </p></p>
+
                             <div class="clear"></div>
 
 
 						</div>
+
 					</div>
 				</div>
 				<!-- Fim do Conteudo -->            

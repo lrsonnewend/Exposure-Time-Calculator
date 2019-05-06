@@ -71,7 +71,8 @@
 							<h1 class="documentFirstHeading">Exposure Time Calculator - IAGPOL </h1>
 							<section>
 								<!-- Introduction -->
-								<p>The Exposure Time Calculator (ETC) is a tool to estimate the exposure time required to achieve a given polarization error or the polarization error obtained using a given exposure time. The ETC works for the IAGPOL instrument installed at the Pico dos Dias Observatory (OPD). Details about the calculations can be found clicking on “Information” in the lateral menu.</p>
+								<p>The Exposure Time Calculator (ETC) is a tool to estimate the exposure time required to achieve a given polarization error or the polarization error obtained using a given exposure time. The ETC works for the IAGPOL instrument installed at the Pico dos Dias Observatory (OPD). Details about the calculations can be found clicking on “Information” in the lateral menu. To access the ETC for another instrument, use the “Home” option.
+								</p>
 	                            <br/>
                             </section>
                             <strong>ETC</strong>
@@ -194,7 +195,8 @@
 									</p>
 									<p>
 										<label for="cAperture">Aperture radius</label><br>
-										<input type="Number" name="tAperture" id="cAperture" value="2" size="15" min="0" max="30" required><font>arcsec</font>
+										<input type="Number" name="tAperture" id="cAperture" value="2" size="15" min="0" max="30" step="0.1" 
+										required><font>arcsec</font>
 									</p>
 									<p>	<label>ETC Mode</label><br>
 										<a onclick="changeState('boxTime','block','boxSigma','none')">

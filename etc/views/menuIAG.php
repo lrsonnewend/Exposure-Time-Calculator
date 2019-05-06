@@ -19,7 +19,8 @@
         
             <ul>
                 <li><a href="./index.php" title="Home">Home</a></li>
-                <li><a href="./informationIAGPOL.php" title="ETC_IAGPOL">Information</a></li>
+                <li><a href="./informationIAGPOL.php" title="Error calculation">Error calculation</a></li>
+                <li><a href="http://www.astro.iag.usp.br/~polarimetria/gaveta/default.htm"title="Instrument page" target="_blank">Instrument Page</a></li>
                 <li><a href="./about.php" title="About">About</a></li>
             </ul>
         </li>      

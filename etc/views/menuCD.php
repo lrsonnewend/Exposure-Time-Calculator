@@ -19,7 +19,8 @@
         
             <ul>
                 <li><a href="./index.php" title="Home">Home</a></li>
-                <li><a href="./informationCD.php" title="ETC_CD">Information</a></li>
+                <li><a href="./informationCD.php" title="Error calculation">Error calculation</a></li>
+                <li><a href="http://www.lna.br/opd/instrum/camara/camara.html" title="Instrument page" target="_blank">Instrument Page</a></li>
                 <li><a href="./about.php" title="About">About</a></li>
             </ul>
         </li>      

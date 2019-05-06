@@ -71,7 +71,8 @@
 							<h1 class="documentFirstHeading">Exposure Time Calculator - CCD Imager</h1>
 							<section>
 								<!-- Introduction -->
-								<p> The Exposure Time Calculator (ETC) is a tool to estimate the exposure time required to achieve a given polarization error or the polarization error obtained using a given exposure time. This form works for the CCD Imager used at the Pico dos Dias Observatory (OPD). Details about the calculations can be found clicking on “Information” in the lateral menu.</p>
+								<p> The Exposure Time Calculator (ETC) is a tool to estimate the exposure time required to achieve a given polarization error or the polarization error obtained using a given exposure time. This form works for the CCD Imager used at the Pico dos Dias Observatory (OPD). Details about the calculations can be found clicking on “Information” in the lateral menu. To access the ETC for another instrument, use the “Home” option.
+								</p>
 	                            <br/>
                             </section>
                             <strong>ETC</strong>
@@ -176,7 +177,7 @@
 									</p>
 									<p>
 										<label for="cAperture">Aperture radius</label><br>
-										<input type="Number" name="tApertureCD" id="cAperture" value="2" size="15" min="0" max="30" required><font>arcsec</font>
+										<input type="Number" name="tApertureCD" id="cAperture" value="2.0" size="15" min="0" max="30" step="0.1" required><font>arcsec</font>
 									</p>
 									<p>	<label>ETC Mode</label><br>
 										<a onclick="changeState('boxTime','block','boxSigma','none')">
@@ -187,7 +188,7 @@
 											
 											<input type="radio" name="tModeCD" id="cMode2" value="0">
 										</a>
-										<label for="cMode2">Calculate the integration time  for a given magnitude error </label>
+										<label for="cMode2">Calculate the integration time for a given magnitude error </label>
 									</p>
 									<p>
 										<div id="boxTime">
@@ -198,7 +199,7 @@
 									<p>
 										<div id="boxSigma">
 											<label for="cSigma">Sigma</label><br>
-											<input type="Number" name="tSigmaM" id="cSigmaM" size="15" value="0.1" step="0.0001" min="0.0001"><font>mag</font>
+											<input type="Number" name="tSigmaM" id="cSigmaM" size="15" value="0.1" step="0.0000000000000001" min="0.0000000000000001"><font>mag</font>
 										</div>
 									</p>
 									<input type="submit" name="cCalculate" value="Calculate" formtarget="_blank">
