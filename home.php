@@ -78,7 +78,7 @@
 									</div>
 								</div>
 								<!-- End Card IAGPOL -->
-								<!-- Begin Card SPARC4 -->
+								<!-- Begin Card SPARC4 
 								<div class="card">
 									<div class="container">
 										<a href="?r=/SPARC4"><h3><b>ETC - SPARC4</b></h3></a>
@@ -86,7 +86,8 @@
 									<div class="container">
 											<a href="?r=/SPARC4"><img src="../img/pe1.jpg" alt="img pe1"></a>
 									</div>
-								</div>
+								</div> -->
+
 								<!--End Card SPARC4 -->
 								<!-- Begin Card CD-->
 

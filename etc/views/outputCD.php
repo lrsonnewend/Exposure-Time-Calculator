@@ -26,7 +26,7 @@
 		$fw = imagefontwidth($font);
 	}
 	
-	$plot = new PHPlot(1200,600);
+	$plot = new PHPlot(1200,700);
 	$plot->SetFailureImage(False); // No error images
 	$plot->SetPrintImage(False); // No automatic output
 	$plot->SetDataValues($data);
@@ -42,9 +42,11 @@
 	$plot->SetFontGD('x_label', 4);
 	$plot->SetFontGD('x_title', 5);
 	$plot->SetFontGD('y_title', 5);
+	//$plot->SetXTickIncrement(2);
+	//$plot->TuneXAutoRange(0);
+	//$plot->SetPlotAreaWorld(($time/10), NULL, ($time*10));
 	# Force the bottom of the plot to be at Y=0, and omit
 	# the bottom "$0M" tick label because it looks odd:
-	$plot->SetPlotAreaWorld(NULL, 0);
 	$plot->SetSkipBottomTick(True);
 	# Establish the drawing callback to do the annotation:
 	$plot->SetCallback('draw_all', 'annotate_plot', $plot);

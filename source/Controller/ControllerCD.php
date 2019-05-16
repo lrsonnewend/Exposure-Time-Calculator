@@ -53,7 +53,6 @@
 
  	else
  	{
- 
 
 		$observation->setSigmaM(3,0,0,$sigmaM);
 

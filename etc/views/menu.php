@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="./index.php" title="Home">Home</a></li>
                 <li><a href="./formIAGPOL.php" title="ETC_IAGPOL">ETC - IAGPOL</a></li>
-                <li><a href="./formSPARC4.php" title="ETC_SPARC4">ETC - SPARC4</a></li>
+                <!--<li><a href="./formSPARC4.php" title="ETC_SPARC4">ETC - SPARC4</a></li>-->
                 <li><a href="./formCD.php" title="ETC_CÂMARA_DIRETA">ETC - CCD Imager</a></li>
                 <li><a href="./about.php" title="About">About</a></li>
             </ul>

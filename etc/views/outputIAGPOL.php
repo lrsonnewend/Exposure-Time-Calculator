@@ -66,13 +66,13 @@
 		<section class="values">
 			<h2> Final values</h2>
 			<?php
-				echo '<span>Integration time: </span> '.number_format($time).' s<br>';
-				echo '<span>Error of the linear polarization: </span> '.number_format($sigmaP,3).' %<br>';
+				echo '<span>Integration time: </span> '.($time).' s<br>';
+				echo '<span>Error of the linear polarization: </span> '.($sigmaP).' %<br>';
 				if($sigmaV!=0)
 				{
-					echo '<span>Error of the circular polarization:</span> '.number_format($sigmaV,3).' %<br>';
+					echo '<span>Error of the circular polarization:</span> '.($sigmaV).' %<br>';
 				}	
-				echo '<span> Integrated signal noise ratio of one waveplate position: </span> '.number_format($snr,2).'<br>';
+				echo '<span> Integrated signal noise ratio of one waveplate position: </span> '.($snr).'<br>';
 			?>
 			<button onclick="window.print()" style="font-size: 15pt;">Print results</button>
 		</section>
