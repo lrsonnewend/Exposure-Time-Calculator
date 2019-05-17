@@ -44,7 +44,7 @@
 	$plot->SetFontGD('y_title', 5);
 	//$plot->SetXTickIncrement(2);
 	//$plot->TuneXAutoRange(0);
-	//$plot->SetPlotAreaWorld(($time/10), NULL, ($time*10));
+	//$plot->SetPlotAreaWorld(0, NULL);
 	# Force the bottom of the plot to be at Y=0, and omit
 	# the bottom "$0M" tick label because it looks odd:
 	$plot->SetSkipBottomTick(True);

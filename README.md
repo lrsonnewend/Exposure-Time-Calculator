@@ -16,3 +16,6 @@ The ETC was created in [PHP](http://www.php.net/) using the [MVC architecture](h
 The ETC is available [here](http://www.inpe.br/etc/)
 
 The documentation of ETC is available [here](https://github.com/LASalvador/Exposure-Time-Calculator/blob/master/Documentation.md). 
+# Exposure-Time-Calculator
+# Exposure-Time-Calculator
+# Exposure-Time-Calculator

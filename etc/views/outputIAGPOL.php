@@ -45,7 +45,7 @@
 	$plot->SetFontGD('y_title', 5);
 	# Force the bottom of the plot to be at Y=0, and omit
 	# the bottom "$0M" tick label because it looks odd:
-	$plot->SetPlotAreaWorld(NULL, 0);
+	//$plot->SetPlotAreaWorld(NULL, 0);
 	$plot->SetSkipBottomTick(True);
 	# Establish the drawing callback to do the annotation:
 	$plot->SetCallback('draw_all', 'annotate_plot', $plot);

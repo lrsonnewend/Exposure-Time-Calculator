@@ -82,16 +82,9 @@
 		* @return Array $data - dataset to build the graph
 		*/
 		public function generateValues($timeIntegration , $nwp, $wave)
-		{
-			// To determine to $timeRange ends in 500 or $timeIntegration
-			if($timeIntegration>500)
-			{
-				$timeRange = $timeIntegration;
-			}
-			else
-			{
-				$timeRange = 500;
-			}
+		{			
+			$timeRange = $timeIntegration;
+			
 			$data = array();
 			// It's defining the values at $time = 1s
 			
@@ -111,8 +104,8 @@
 	 		}
 			//It's Setting the values to 1s
 			$data[] = array('',1, round($this->getObservation()->getSigmaP(),3) );
-			//It's Defining the values begin 10 to $timeRange in step 10
-			for ($time=10; $time <=$timeRange; $time+=10) 
+			//It's Defining the values time ​​starting with their minimum value up to the maximum value in an interval of 5 seconds
+			for ($time=($timeRange/10); $time <=($timeRange*10); $time+=10) 
 			{ 	// In wavelate of 1/2 wave
 				if($wave=='1/2')
 		 		{
@@ -136,20 +129,9 @@
 
 
 
-
-
 		public function generateValuesCD($timeIntegration, $nwp)
 		{
-			// To determine to $timeRange ends in 500 or $timeIntegration
 			$timeRange = $timeIntegration;
-			/*if($timeIntegration>60)
-			{
-				$timeRange = $timeIntegration;
-			}
-			else
-			{
-				$timeRange = 60;
-			}*/
 			
 			$data = array();
 			// It's defining the values at $time = 1s
@@ -163,9 +145,10 @@
 				
 			//It's Setting the values to 1s
 
-			$data[] = array('',1, round($this->getObservation()->getSigmaM(),1));			
-			//It's Defining the values begin 10 to $timeRange in step 10
-			for ($time=($timeRange/10); $time <=$timeRange*10; $time+=10)
+			$data[] = array('',1, round($this->getObservation()->getSigmaM(),3));
+
+			//It's Defining the values time ​​starting with their minimum value up to the maximum value in an interval of 5 seconds
+			for ($time=($timeRange/10); $time <=($timeRange*10); $time+=10)
 			{ 	
 				
 				
