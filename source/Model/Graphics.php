@@ -105,8 +105,11 @@
 			//It's Setting the values to 1s
 			$data[] = array('',1, round($this->getObservation()->getSigmaP(),3) );
 			//It's Defining the values time ​​starting with their minimum value up to the maximum value in an interval of 5 seconds
-			for ($time=($timeRange/10); $time <=($timeRange*10); $time+=10) 
-			{ 	// In wavelate of 1/2 wave
+			$minTime = $timeRange/10;
+			$maxTime = $timeRange*10;
+			
+			for ($time = 0; $time <= $maxTime; $time+=$timeRange)
+			{ 	
 				if($wave=='1/2')
 		 		{
 		 			$this->getObservation()->setSignalNoiseRatio(1,$this->getObservation()->getNumberPhotons(), $time, $this->getObservation()->getNumberPixels(), $this->getSky()->getNumberPhotons(),$this->getInstrument()->getCCD()->getReadoutNoise(),$this->getInstrument()->getCCD()->getGain(),  $this->getInstrument()->getCCD()->getBinning());
@@ -146,9 +149,12 @@
 			//It's Setting the values to 1s
 
 			$data[] = array('',1, round($this->getObservation()->getSigmaM(),3));
-
+			
 			//It's Defining the values time ​​starting with their minimum value up to the maximum value in an interval of 5 seconds
-			for ($time=($timeRange/10); $time <=($timeRange*10); $time+=10)
+			$minTime = $timeRange/10;
+			$maxTime = $timeRange*10;
+			
+			for ($time = 0; $time <= $maxTime; $time+=$timeRange)
 			{ 	
 				
 				

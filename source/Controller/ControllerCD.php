@@ -95,7 +95,7 @@
 				'fCalib' => $observation->getFcalib(),
 				'fluxZero' => $filtro->getFluxZero(),
 				'tFilter' => $instrument->getTFilter(),
-				//'tTel' => $instrument->getTTel(),
+				'tTel' => $instrument->getTTel(),
 				'central' => $filtro->getEffectiveLenght(),
 				'band' => $filtro->getFilterWidth(),
 				'quantumEfficiency' => $instrument->getCCD()->getQuanTumEfficiency(),

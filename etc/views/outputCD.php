@@ -26,7 +26,7 @@
 		$fw = imagefontwidth($font);
 	}
 	
-	$plot = new PHPlot(1200,700);
+	$plot = new PHPlot(1200,600);
 	$plot->SetFailureImage(False); // No error images
 	$plot->SetPrintImage(False); // No automatic output
 	$plot->SetDataValues($data);
@@ -44,7 +44,7 @@
 	$plot->SetFontGD('y_title', 5);
 	//$plot->SetXTickIncrement(2);
 	//$plot->TuneXAutoRange(0);
-	//$plot->SetPlotAreaWorld(0, NULL);
+	//$plot->SetPlotAreaWorld(NULL, 0);
 	# Force the bottom of the plot to be at Y=0, and omit
 	# the bottom "$0M" tick label because it looks odd:
 	$plot->SetSkipBottomTick(True);
