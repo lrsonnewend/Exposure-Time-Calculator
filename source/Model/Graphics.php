@@ -108,8 +108,8 @@
 			$minTime = $timeRange/10;
 			$maxTime = $timeRange*10;
 			
-			for ($time = 0; $time <= $maxTime; $time+=$timeRange)
-			{ 	
+			for ($time = $minTime; $time <= $maxTime; $time+=$timeRange)
+			{ 	 
 				if($wave=='1/2')
 		 		{
 		 			$this->getObservation()->setSignalNoiseRatio(1,$this->getObservation()->getNumberPhotons(), $time, $this->getObservation()->getNumberPixels(), $this->getSky()->getNumberPhotons(),$this->getInstrument()->getCCD()->getReadoutNoise(),$this->getInstrument()->getCCD()->getGain(),  $this->getInstrument()->getCCD()->getBinning());
@@ -154,7 +154,7 @@
 			$minTime = $timeRange/10;
 			$maxTime = $timeRange*10;
 			
-			for ($time = 0; $time <= $maxTime; $time+=$timeRange)
+			for ($time = $minTime; $time <= $maxTime; $time+=$timeRange)
 			{ 	
 				
 				

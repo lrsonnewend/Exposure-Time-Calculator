@@ -34,7 +34,7 @@
 	$plot->SetTitle("Magnitude Error X Time");
 	$plot->SetXLabelType('data');
 	$plot->SetXTitle("Integration Time (s)");
-	$plot->SetPrecisionX(0);
+	$plot->SetPrecisionX(1);
 	$plot->SetYLabelType('data');
 	$plot->SetYTitle("Error (mag)");
 	$plot->SetPrecisionY(3);
