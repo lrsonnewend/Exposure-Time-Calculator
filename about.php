@@ -66,7 +66,7 @@
 
 							<h1 class="documentFirstHeading">About</h1>
 
-							<p>This Exposure Time Calculator (ETC, Version 2.0) was developed in INPE by Lucas Salvador and Lucas Sonnewend. It works for IAGPOL and the CCD Imager installed at Observatory Pico dos Dias. In the future, it will be adapted to the SPARC4 instrument.</p>
+							<p>This Exposure Time Calculator (ETC) was developed in INPE by Lucas Salvador and Lucas Sonnewend. It works for IAGPOL and the CCD Imager installed at Observatory Pico dos Dias. In the future, it will be adapted to the SPARC4 instrument.</p>
 							<p>The ETC was developed in PHP 5.6, HTML 5, CSS 3 and JavaScript. The trio HTML, CS3 and JavaScript were used to build the interface of the site.The PHP is used to perform the calculation and to generate the graph. The graph is created using the<a href="http://phplot.org/" target="_blank"> PHPlot Library.</a></p>
 						   	<p>The code is available <a href="https://github.com/lrsonnewend/Exposure-Time-Calculator" target="_blank">here</a> and it is licensed under the GNU General Public License v2.0.</p>
 						   	<p>If you find an error, please send an email to Claudia Rodrigues (<?php echo file_get_contents("./static/claudia.txt");?>).

@@ -19,7 +19,7 @@
         
             <ul>
                 <li><a href="./index.php" title="Home">Home</a></li>
-                <li><a href="./informationIAGPOL.php" title="Error calculation">Error calculation</a></li>
+                <li><a href="../docs/calculo_erro_polarizacao.pdf" title="Error calculation" download>Error calculation</a></li>
                 <li><a href="http://www.astro.iag.usp.br/~polarimetria/gaveta/default.htm"title="Instrument page" target="_blank">Instrument Page</a></li>
                 <li><a href="./about.php" title="About">About</a></li>
             </ul>

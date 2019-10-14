@@ -70,7 +70,7 @@
 
 							<p>The file will be downloaded automatically.</p>	
 							<br/>
-									<iframe src="docs/calculo_erro_polarizacao.pdf"></iframe>													
+									<iframe src="docs/calculo_erro_magnitude.pdf"></iframe>													
                             <p>
                             <strong>Desenvolvido por <a href="http://www.cea.inpe.br/" title="Acesse COCTI/INPE" target="_blank">CEA/INPE</a></strong>
                             </p>
