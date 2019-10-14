@@ -97,10 +97,11 @@
 									</p>
 									<p>
 										<label>Telescope</label><br>
-										<input type="radio" name="tTelCD" id="cTel1" value="0.6">
-										<label for="cTel1">0.6m</label>
-										<input type="radio" name="tTelCD" id="cTel2" checked value="1.6">
-										<label for="cTel2">1.6m</label>
+										<input type="radio" name="tTel" id="cTel1" value="0.6">
+										<label for="cTel1">0.6m (Boller & Chivens)</label>
+										&nbsp;&nbsp;
+										<input type="radio" name="tTel" id="cTel2" checked value="1.6">
+										<label for="cTel2">1.6m (Perkin & Elmer)</label>
 									</p>
 									<p>
 										<label for="">Detector</label><br><bt>

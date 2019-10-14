@@ -19,7 +19,7 @@
 		# Get the pixel coordinates of the data points for the best and worst:
 		list($time_x, $sigma_y) = $plot->GetDeviceXY($GLOBALS['time'], $GLOBALS['sigmaM']);
 		# Draw ellipses centered on those two points:
-		imageellipse($img, $time_x, $sigma_y, 50, 17, $green);
+		imageellipse($img, $time_x, $sigma_y, 50, 20, $green);
 		# Place some text above the points:
 		$font = '3';
 		$fh = imagefontheight($font);
@@ -34,7 +34,7 @@
 	$plot->SetTitle("Magnitude Error X Time");
 	$plot->SetXLabelType('data');
 	$plot->SetXTitle("Integration Time (s)");
-	$plot->SetPrecisionX(1);
+	$plot->SetPrecisionX(2);
 	$plot->SetYLabelType('data');
 	$plot->SetYTitle("Error (mag)");
 	$plot->SetPrecisionY(3);
@@ -42,9 +42,11 @@
 	$plot->SetFontGD('x_label', 4);
 	$plot->SetFontGD('x_title', 5);
 	$plot->SetFontGD('y_title', 5);
-	//$plot->SetXTickIncrement(2);
-	//$plot->TuneXAutoRange(0);
-	//$plot->SetPlotAreaWorld(NULL, 0);
+	#$plot->TuneXAutoRange(1);
+	#$plot->TuneXAutoRange(10);
+  	#$plot-> TuneXAutoRange ($time/10, 'I', 0);
+	$plot->SetPlotAreaWorld(NULL, NULL, NULL);
+	
 	# Force the bottom of the plot to be at Y=0, and omit
 	# the bottom "$0M" tick label because it looks odd:
 	$plot->SetSkipBottomTick(True);

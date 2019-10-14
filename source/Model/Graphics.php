@@ -103,12 +103,14 @@
 				$this->getObservation()->setSigmaP(2,$this->getObservation()->getSignalNoiseRatio(),$nwp);
 	 		}
 			//It's Setting the values to 1s
-			$data[] = array('',1, round($this->getObservation()->getSigmaP(),3) );
+			#$data[] = array('',1, round($this->getObservation()->getSigmaP(),3) );
+			
 			//It's Defining the values time ​​starting with their minimum value up to the maximum value in an interval of 5 seconds
 			$minTime = $timeRange/10;
-			$maxTime = $timeRange*10;
+			$maxTime = $timeRange*2;
+			$average = $minTime*0.35;
 			
-			for ($time = $minTime; $time <= $maxTime; $time+=$timeRange)
+			for ($time = $minTime; $time <= $maxTime; $time+=$average)
 			{ 	 
 				if($wave=='1/2')
 		 		{
@@ -124,8 +126,9 @@
 					$this->getObservation()->setSigmaP(2,$this->getObservation()->getSignalNoiseRatio(),$nwp);
 		 		}
 				//It's Saving the values in Array
-				$data[] = array('', $time, round($this->getObservation()->getSigmaP(), 3) );
+				$data[] = array('', $time, $this->getObservation()->getSigmaP());
 			}
+
 			//It's retorning the Array
 			return $data;
 		}
@@ -148,29 +151,32 @@
 				
 			//It's Setting the values to 1s
 
-			$data[] = array('',1, round($this->getObservation()->getSigmaM(),3));
 			
 			//It's Defining the values time ​​starting with their minimum value up to the maximum value in an interval of 5 seconds
+			//if ($timeIntegration >= 1.0){
 			$minTime = $timeRange/10;
-			$maxTime = $timeRange*10;
-			
-			for ($time = $minTime; $time <= $maxTime; $time+=$timeRange)
-			{ 	
-				
-				
-			 	$this->getObservation()->setSignalNoiseRatioCD(1,$this->getObservation()->getNumberPhotons(), $time, $this->getObservation()->getNumberPixels(), $this->getSky()->getNumberPhotons(),$this->getInstrument()->getCCD()->getReadoutNoise(),$this->getInstrument()->getCCD()->getGain(),  $this->getInstrument()->getCCD()->getBinning());
+			$average = $minTime*0.35;
+			$maxTime = $timeRange*2;
+			#$data[] = array('',1, round($this->getObservation()->getSigmaM(),3));
 
-				$this->getObservation()->setSigmaM(1,$this->getObservation()->getSignalNoiseRatioCD(),$nwp);
-				
-				//It's Saving the values in Array
+			for ($time = $minTime; $time <= $maxTime; $time+= $average)
+				{ 	
+					/*$c+=1;
+					if ($c > 3)
+						$average = 0.6;*/
+				 	$this->getObservation()->setSignalNoiseRatioCD(1,$this->getObservation()->getNumberPhotons(), $time, $this->getObservation()->getNumberPixels(), $this->getSky()->getNumberPhotons(),$this->getInstrument()->getCCD()->getReadoutNoise(),$this->getInstrument()->getCCD()->getGain(),  $this->getInstrument()->getCCD()->getBinning());
 
-				$data[] = array('',$time, round($this->getObservation()->getSigmaM(),3));
+					$this->getObservation()->setSigmaM(1,$this->getObservation()->getSignalNoiseRatioCD(),$nwp);
+					
+					//It's Saving the values in Array
+
+					$data[] = array('',$time, $this->getObservation()->getSigmaM());
+				}
 
 
+				//It's retorning the Array
+				return 	$data;
+		
 			}
-
-			//It's retorning the Array
-			return $data;
 		}
-	}
 ?>

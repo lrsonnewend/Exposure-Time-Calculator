@@ -27,7 +27,7 @@
 		$fw = imagefontwidth($font);
 	}
 	
-	$plot = new PHPlot(1200,600);
+	$plot = new PHPlot(1250,600);
 	$plot->SetFailureImage(False); // No error images
 	$plot->SetPrintImage(False); // No automatic output
 	$plot->SetDataValues($data);
@@ -35,7 +35,7 @@
 	$plot->SetTitle("Polarization Error X Time");
 	$plot->SetXLabelType('data');
 	$plot->SetXTitle("Integration Time (s)");
-	$plot->SetPrecisionX(0);
+	$plot->SetPrecisionX(1);
 	$plot->SetYLabelType('data');
 	$plot->SetYTitle("Polarization Error (%)");
 	$plot->SetPrecisionY(3);
@@ -43,9 +43,10 @@
 	$plot->SetFontGD('x_label', 4);
 	$plot->SetFontGD('x_title', 5);
 	$plot->SetFontGD('y_title', 5);
+	$plot->SetPlotAreaWorld(NULL, NULL, NULL);
 	# Force the bottom of the plot to be at Y=0, and omit
 	# the bottom "$0M" tick label because it looks odd:
-	//$plot->SetPlotAreaWorld(NULL, 0);
+	#$plot->SetPlotAreaWorld(NULL, 0);
 	$plot->SetSkipBottomTick(True);
 	# Establish the drawing callback to do the annotation:
 	$plot->SetCallback('draw_all', 'annotate_plot', $plot);
